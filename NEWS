@@ -1,0 +1,66 @@
+############################################
+                                SPIDER VERSION 1.3-0
+				Released 25 December 2013
+				
+
+-- read.GB: Space removed from around the pipe in the default naming scheme.
+-- chaoHaplo: 95% confidence interval calculated around the estimated number of haplotypes.
+-- New functions: cgraph, ordinDNA and plot.ordinDNA
+-- namespace issues resolved
+
+############################################
+                                SPIDER VERSION 1.2-0
+				Released 17 November 2012
+				
+
+-- Functions added: heatmapSpp
+-- read.BOLD: Function completely rewritten to compensate for BOLD deprecating their eFetch system
+
+############################################
+                                SPIDER VERSION 1.1-5
+				Released 11 October 2012
+				
+
+-- monophyly: Code changed from calling the ape C routine "bipartition" directly, to using prop.part()
+-- monophylyBoot: Code changed from calling the ape C routine "bipartition" directly, to using prop.part()
+-- tree.comp: Code changed from calling the ape C routine "bipartition" directly, to using prop.part()
+
+############################################
+                                SPIDER VERSION 1.1-4
+				Released 17 June 2012
+				
+
+-- sarkar: The addition of a dataset containing the dummy sequences published in Sarkar et al to illustrate the different categories of diagnostic nucleotides.
+
+############################################
+                                SPIDER VERSION 1.1-3
+				Released 29 March 2012
+				
+
+-- rankSlidWin: bug fixed that caused an error when multiple names were given to "criteria"
+
+############################################
+                                SPIDER VERSION 1.1-2
+				Released 10 March 2012
+				
+
+-- read.GB: modified to work with eFetch version 2.0 (http://www.ncbi.nlm.nih.gov/books/NBK25499/)
+-- read.BOLD: help file updated
+-- search.BOLD: Modified to work with BOLDsystems v 3.0
+-- Functions added: stats.BOLD
+
+############################################
+                                SPIDER VERSION 1.1-1
+				Released 27 November 2011
+				
+
+-- tiporder: "labels" option added to toggle between returning the labels (when "labels"=TRUE), or returning the indices (when "labels"=FALSE).
+
+############################################
+                                SPIDER VERSION 1.1-0
+				Released 6 November 2011
+
+-- Initial release onto CRAN
+-- No known issues
+
+############################################

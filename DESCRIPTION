@@ -1,0 +1,15 @@
+Package: spider
+Type: Package
+Title: Species Identity and Evolution in R
+Version: 1.3-0
+Date: 2013-12-25
+Author: Samuel Brown, Rupert Collins, Stephane Boyer, Marie-Caroline Lefort, Jagoba Malumbres-Olarte, Cor Vink, Rob Cruickshank
+Maintainer: Samuel Brown <s_d_j_brown@hotmail.com>
+Description: A package for the analysis of species limits and DNA barcoding data
+License: GPL
+LazyLoad: yes
+Depends: ape, pegas
+Packaged: 2013-12-27 04:41:31 UTC; sam
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2013-12-27 07:30:41

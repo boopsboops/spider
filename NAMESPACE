@@ -1,0 +1,14 @@
+# Remove the previous line if you edit this file
+
+# Export all names
+exportPattern("^[^\\.]")
+
+# Import all packages listed as Imports or Depends
+importFrom(ape, dist.dna, base.freq, seg.sites)
+importFrom(pegas, haplotype)
+importFrom(graphics, plot)
+
+
+#S3 methods
+S3method(plot, slidWin)
+S3method(plot, haploAccum)
