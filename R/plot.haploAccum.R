@@ -43,7 +43,7 @@
 #' @importFrom graphics matlines
 #' @importFrom graphics polygon
 #' @importFrom graphics lines
-#' @export plot.haploAccum
+#' @export
 plot.haploAccum <-
     function(x, add = FALSE, ci = 2, ci.type = c("bar","line","polygon"), 
              col = par("fg"), ci.col = col, ci.lty = 1, xlab,
