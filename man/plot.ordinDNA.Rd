@@ -102,36 +102,11 @@ anoOrd <- ordinDNA(anoDist, anoSpp)
 
 plot(anoOrd, sppBounds = "circles")
 
-
-
-data(dolomedes)
-#Dolomedes species vector
-doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
-
-data(anoteropsis)
-#Anoteropsis species vector
-anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"), 
-    function(x) paste(x[1], x[2], sep="_"))
-
-
-
 }
 \seealso{
 \code{\link{ordinDNA}}, \code{\link{cgraph}}.
-
-Functions for creating species vectors: \code{\link{strsplit}},
-\code{\link{substr}}, \code{\link{sapply}}.
-
-Functions that use species vectors: \code{\link{nearNeighbour}},
-\code{\link{monophyly}}, \code{\link{nonConDist}}, \code{\link{nucDiag}},
-\code{\link{rmSingletons}}, \code{\link{slideAnalyses}},
-\code{\link{slideBoxplots}}, \code{\link{sppDist}},
-\code{\link{sppDistMatrix}}, \code{\link{threshOpt}}.
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-
-Samuel Brown <s_d_j_brown@hotmail.com>
 }
-\keyword{Utilities}
 \keyword{Visualisation}

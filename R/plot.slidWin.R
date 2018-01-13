@@ -46,7 +46,7 @@
 #' @importFrom graphics axis
 #' @importFrom graphics bxp
 #' @importFrom stats median
-#' @export plot.slidWin
+#' @export
 plot.slidWin <- 
 function(x, outliers = FALSE, ...){
 	slidWin <- x

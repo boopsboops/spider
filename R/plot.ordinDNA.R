@@ -55,7 +55,7 @@
 #' @seealso \code{\link{ordinDNA}}, \code{\link{cgraph}}.
 #' @keywords Visualisation
 #' @examples
-#' 
+#'
 #' data(dolomedes)
 #' doloDist <- ape::dist.dna(dolomedes)
 #' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
@@ -77,8 +77,7 @@
 #' anoOrd <- ordinDNA(anoDist, anoSpp)
 #' 
 #' plot(anoOrd, sppBounds = "circles")
-#' 
-#' 
+#'
 #' @importFrom stats aggregate
 #' @importFrom stats dist
 #' @importFrom graphics plot
@@ -86,7 +85,8 @@
 #' @importFrom graphics points
 #' @importFrom graphics text
 #' @importFrom ape dist.dna
-#' @export plot.ordinDNA
+#'
+#' @export
 plot.ordinDNA <- function(x, majorAxes = c(1,2), plotCol = "default", trans = "CC", textcex = 0.7, pchCentroid = FALSE, sppBounds = "net", sppNames = TRUE, namePos = "top", ptPch = 21, ptCex = 0.5, netWd = 1, ...){
 	#Colours
 	if(plotCol[1] == "default") {
@@ -100,61 +100,11 @@ plot.ordinDNA <- function(x, majorAxes = c(1,2), plotCol = "default", trans = "C
 		} else plotCol <- plotCol
 	plotCol <-  rep(plotCol, ceiling(length(x$sppVector)/length(plotCol)))
 	transCol <- paste(plotCol, trans, sep = "")
-
-
-#' Species Vectors
-#' 
-#' A grouping variable that gives an identity to the individuals in various
-#' analyses.
-#' 
-#' Species vectors are the key concept behind a lot of \code{spider}'s
-#' functionality. They are the method used to group data from individuals into
-#' species. It is important to note that "species" in this context can mean any
-#' cluster (real or otherwise) that is of interest. Populations, demes,
-#' subspecies and genera could be the taxa segregated by "species vectors".
-#' 
-#' The two characteristics of a species vector are UNIQUENESS between species
-#' and CONSISTENCY within them. R recognises differences of a single character
-#' between elements, leading to \code{spider} considering these elements to
-#' represent different species.
-#' 
-#' There is an easy way and a hard way to create species vectors. The hard way
-#' is to type out each element in the vector, making sure no typos or alignment
-#' errors are made.
-#' 
-#' The easy way is to add species designations into your data matrix from the
-#' beginning in such a way that it is easy to use R's data manipulation tools
-#' to create a species vector from the names of your data. See the examples for
-#' a few ways to do this.
-#' 
-#' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso Functions for creating species vectors: \code{\link{strsplit}},
-#' \code{\link{substr}}, \code{\link{sapply}}.
-#' 
-#' Functions that use species vectors: \code{\link{nearNeighbour}},
-#' \code{\link{monophyly}}, \code{\link{nonConDist}}, \code{\link{nucDiag}},
-#' \code{\link{rmSingletons}}, \code{\link{slideAnalyses}},
-#' \code{\link{slideBoxplots}}, \code{\link{sppDist}},
-#' \code{\link{sppDistMatrix}}, \code{\link{threshOpt}}.
-#' @keywords Utilities
-#' @examples
-#' 
-#' data(dolomedes)
-#' #Dolomedes species vector
-#' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
-#' 
-#' data(anoteropsis)
-#' #Anoteropsis species vector
-#' anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"), 
-#'     function(x) paste(x[1], x[2], sep="_"))
-#' 
-#' 
-#' 
 	sppVector <- x$sppVector
 	sppVecFac <- as.factor(sppVector)
 	sppVecFacNum <- as.numeric(unique(sppVecFac))
-
-	
+	#
+	#
 	#Figure out the centroid positions
 	mat <- x$pco$points[, majorAxes]
 	centroids <- aggregate(mat, list(sppVector), mean)
@@ -169,16 +119,16 @@ plot.ordinDNA <- function(x, majorAxes = c(1,2), plotCol = "default", trans = "C
 	radius <- sapply(unique(sppVector), function(xx) maxDist(mat[sppVector == xx,]))
 	names(radius) <- unique(sppVector)
 	radius <- radius[match(centroids$spp, names(radius))]
-	
+	#
 	##### net setup
 	sppPoints <- lapply(unique(sppVector), function(xx) mat[sppVector == xx, , drop = FALSE])
 	topPoint <- sapply(sppPoints, function(xx) xx[which.max(xx[,2]), ])
-	
+	#
 	####Proportion of variation in each axis
 	propVar <- round(x$pco$eig/max(cumsum(x$pco$eig)) * 100, 1)
-	
+	#
 	if(namePos == "top") labRadius <- radius else if(namePos == "bottom") labRadius <- -radius else labRadius <- 0
-
+	#
 	plot(mat[,1], mat[,2], type = "n", asp = 1, xlab = paste("Major axis ", majorAxes[1], " (", propVar[majorAxes[1]], "%)", sep = ""), ylab = paste("Major axis ", majorAxes[2], " (", propVar[majorAxes[2]], "%)", sep = ""), ...)
 	if(sppBounds == "circles") symbols(centroids[,2], centroids[,3], circles = radius, fg = transCol[as.numeric(sort(unique(sppVecFac)))], bg = transCol[as.numeric(sort(unique(sppVecFac)))], inches = FALSE, add = TRUE)
 	if(sppBounds == "net") lapply(1:length(sppPoints), function(xx) cgraph(sppPoints[[xx]], col = plotCol[sppVecFacNum[xx]], lwd = netWd))	
