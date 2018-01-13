@@ -8,9 +8,9 @@
 \description{Tests of barcoding efficacy using distance-based methods.}
 
 \usage{
-bestCloseMatch(distobj, sppVector, threshold = 0.01)
+bestCloseMatch(distobj, sppVector, threshold = 0.01, names = FALSE)
 nearNeighbour(distobj, sppVector, names = FALSE)
-threshID(distobj, sppVector, threshold = 0.01)}
+threshID(distobj, sppVector, threshold = 0.01, names = FALSE)}
 
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -21,13 +21,16 @@ threshID(distobj, sppVector, threshold = 0.01)}
 }
 
 \details{
-These functions test barcoding efficacy and are not identification tools. All sequences must be identified prior to testing. Each sequence is considered an unknown while the remaining sequences in the dataset constitute the DNA barcoding database that is used for identification. If the identification from the test is the same as the pre-considered identification, a correct result is returned. 
+These functions test barcoding efficacy. All sequences must be identified prior to testing. Each sequence is considered an unknown while the remaining sequences in the dataset constitute the DNA barcoding database that is used for identification. If the identification from the test is the same as the pre-considered identification, a correct result is returned. 
 
-\code{bestCloseMatch} conducts the "best close match" analysis of Meier et al. (2006), considering the closest individual unless it is further than the given threshold, which results in no identification. More than one species tied for closest match results in an assignment of "ambiguous". When the threshold is large, this analysis will return essentially the same result as \code{nearNeighbour}.
+\code{bestCloseMatch} conducts the "best close match" analysis of Meier et al. (2006), considering the closest individual unless it is further than the given threshold, which results in no identification. More than one species tied for closest match results in an assignment of "ambiguous". When the threshold is large, this analysis will return essentially the same result as \code{nearNeighbour}. If \code{names = TRUE}, a list is returned containing the names of all species represented by specimens within the threshold.
 
 \code{nearNeighbour} finds the closest individual and returns if their names are the same (TRUE) or different (FALSE). If \code{names = TRUE}, the name of the closest individual is returned. Ties are decided by majority rule.
 
-\code{threshID} conducts a threshold-based analysis, similar to that conducted by the "Identify Specimen" tool provided by the Barcode of Life Database (\url{http://www.boldsystems.org/views/idrequest.php}). It is more inclusive than \code{bestCloseMatch}, considering ALL sequences within the given threshold.
+\code{threshID} conducts a threshold-based analysis, similar to that conducted by the "Identify Specimen" tool provided by the Barcode of Life Database (\url{http://www.boldsystems.org/index.php/IDS_OpenIdEngine}). It is more inclusive than \code{bestCloseMatch}, considering ALL sequences within the given threshold. If \code{names = TRUE}, a list is returned containing the names of all species represented by specimens within the threshold.
+
+These functions are not recommended as identification tools, though they can be used as such when \code{names = TRUE}.
+
 }
 
 \value{

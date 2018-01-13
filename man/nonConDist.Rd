@@ -1,6 +1,7 @@
 \name{nonConDist}
 \alias{nonConDist}
 \alias{maxInDist}
+\alias{minInDist}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Nearest non-conspecific and maximum intra-specific distances
@@ -11,6 +12,7 @@ These functions give the distances to the nearest non-conspecific and furthest c
 \usage{
 nonConDist(distobj, sppVector, propZero = FALSE, rmNA = FALSE)
 maxInDist(distobj, sppVector, propZero = FALSE, rmNA = FALSE)
+minInDist(distobj, sppVector, propZero = FALSE, rmNA = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 
@@ -34,6 +36,8 @@ Logical. TRUE ignores missing values in the distance matrix. Default of FALSE
 \code{maxInDist} returns the maximum intra-specific distance for each individual.
 
 These two functions can be used to create a version of the barcoding gap.
+
+\code{minInDist} returns the minimum intra-specific distance for each individual.
 }
 
 \value{

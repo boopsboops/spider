@@ -1,29 +1,3 @@
-#' Create illustrative barcodes
-#' 
-#' This function plots an illustrative barcode consisting of vertical bands in
-#' four colours corresponding to the DNA bases adenine (A), cytosine (C),
-#' guanine (G) and thiamine (T).
-#' 
-#' Green, blue, black and red are the standard colours representing A, G, C and
-#' T respectively.
-#' 
-#' @param seq A single sequence of class `DNAbin'.
-#' @param col A character vector of length 4 giving colours to represent A, G,
-#' C and T respectively.
-#' @return Plots an illustrative barcode.
-#' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @keywords Barcoding Utilities
-#' @examples
-#' 
-#' layout(matrix(1:6, ncol=1))
-#' par(mar=c(0.5, 0, 0.5, 0))
-#' data(woodmouse)
-#' seeBarcode(woodmouse[1,])
-#' seeBarcode(woodmouse[1,], col=c("pink", "orange", "steelblue", "yellow"))
-#' seeBarcode(woodmouse[1,], col=c("black", "white", "white", "black"))
-#' apply(woodmouse[1:3,], MARGIN=1, FUN=seeBarcode)
-#' 
-#' @export seeBarcode
 seeBarcode <- 
 function(seq, col=c("green", "blue", "black", "red")){
                 if(!is.null(dim(seq))) if(dim(seq)[1] > 1) stop("Single sequences only please!")
