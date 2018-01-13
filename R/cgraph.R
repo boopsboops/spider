@@ -17,7 +17,7 @@
 #' x <- runif(15)
 #' y <- runif(15)
 #' 
-#' plot(x, y)
+#' graphics::plot(x, y)
 #' cgraph(x, y)
 #' 
 #' M <- cbind(x, y)
@@ -25,6 +25,7 @@
 #' 
 #' @importFrom utils combn
 #' @importFrom graphics segments
+#' @importFrom graphics plot
 #' @export cgraph
 cgraph <- function(x, y = NULL, ...){
 	if(!is.null(y)) mat <- cbind(x, y) else mat <- x

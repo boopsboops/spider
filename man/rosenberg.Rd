@@ -25,13 +25,13 @@ the examples below.
 \examples{
 
 data(anoteropsis)
-anoTr <- nj(dist.dna(anoteropsis))
+anoTr <- ape::nj(ape::dist.dna(anoteropsis))
 anoLab <- rosenberg(anoTr)
 plot(anoTr)
 nodelabels(round(anoLab,3), node=as.numeric(names(anoLab)))
 
 data(dolomedes)
-doloTr <- nj(dist.dna(dolomedes))
+doloTr <- ape::nj(ape::dist.dna(dolomedes))
 doloRose <- rosenberg(doloTr)
 plot(doloTr)
 nodelabels(round(doloRose, 3))
@@ -45,7 +45,6 @@ plot(doloTr, cex=0.7)
 nodelabels(pch=21, bg=doloLabs, node=as.numeric(names(doloLabs)), cex=2)
 legend(x=0.015, y=16.13, legend=c("significant", "not significant"), pch=21, 
     pt.bg=c("blue", "red"), bty="n", pt.cex=2)
-
 
 }
 \references{

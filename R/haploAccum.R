@@ -40,10 +40,11 @@
 #' doloHaplo <- dolomedes[sample(37, size = 200, replace = TRUE), ] 
 #' dolocurv <- haploAccum(doloHaplo, method = "random", permutations = 100)
 #' dolocurv
-#' plot(dolocurv)
+#' graphics::plot(dolocurv)
 #' 
 #' @importFrom utils as.roman
 #' @importFrom stats sd
+#' @importFrom graphics plot
 #' @export haploAccum
 haploAccum<- function (DNAbin, method = "random", permutations = 100, ...){
 

@@ -30,7 +30,7 @@ single cluster.
 data(anoteropsis)
 anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"), 
 	function(x) paste(x[1], x[2], sep="_"))
-anoDist <- dist.dna(anoteropsis)
+anoDist <- ape::dist.dna(anoteropsis)
 
 tclust(anoDist)
 

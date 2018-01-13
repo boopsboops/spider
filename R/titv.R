@@ -26,14 +26,16 @@
 #' 
 #' 
 #' #Saturation plot
-#' doloDist <- dist.dna(dolomedes)
-#' plot(doloDist, ti, type="p", pch=19, col="blue", 
+#' doloDist <- ape::dist.dna(dolomedes)
+#' graphics::plot(doloDist, ti, type="p", pch=19, col="blue", 
 #'     main="Saturation plot of number of transitions and transversions\n
 #'     against K2P distance. Red: transversions. Blue: transitions")
-#' points(doloDist, tv, pch=19, col="red")
+#' graphics::points(doloDist, tv, pch=19, col="red")
 #' 
 #' 
-#' 
+#' @importFrom ape dist.dna
+#' @importFrom graphics plot
+#' @importFrom graphics points
 #' @export titv
 titv <-
 function(DNAbin){

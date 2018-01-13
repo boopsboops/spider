@@ -40,19 +40,20 @@
 #' @examples
 #' 
 #' data(dolomedes)
-#' doloDist <- dist.dna(dolomedes)
+#' doloDist <- ape::dist.dna(dolomedes)
 #' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 #' 
 #' doloNonCon <- slideBoxplots(dolomedes, doloSpp, 200, interval=10)
-#' plot(doloNonCon)
+#' graphics::plot(doloNonCon)
 #' 
 #' doloOverall <- slideBoxplots(dolomedes, doloSpp, 200, interval=10, method="overall")
-#' plot(doloOverall)
+#' graphics::plot(doloOverall)
 #' 
 #' doloInterall <- slideBoxplots(dolomedes, doloSpp, 200, interval=10, method="interAll")
-#' plot(doloInterall)
+#' graphics::plot(doloInterall)
 #' 
 #' @importFrom graphics boxplot
+#' @importFrom graphics plot
 #' @importFrom ape dist.dna
 #' @export slideBoxplots
 slideBoxplots <-

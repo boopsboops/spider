@@ -11,8 +11,6 @@ nucDiag(DNAbin, sppVector)
 \item{DNAbin}{An object of class 'DNAbin'.}
 
 \item{sppVector}{The species vector (see \code{\link{sppVector}}).}
-
-\item{n}{The number of pseudoreplicates to perform. Default of 100}
 }
 \value{
 \code{nucDiag} returns a list giving the pure, simple diagnostic
@@ -73,7 +71,7 @@ use in character- based DNA barcoding. _Molecular Ecology Resources_ *8*
 1256-1259
 }
 \seealso{
-\code{\link{slideNucDiag}}
+\code{\link{slideNucDiag}}, \code{\link{rnucDiag}}
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>

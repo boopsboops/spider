@@ -44,14 +44,15 @@
 #' @examples
 #' 
 #' set.seed(15)
-#' tr <- rtree(15)
+#' tr <- ape::rtree(15)
 #' set.seed(22)
-#' tr2 <- rtree(15)
+#' tr2 <- ape::rtree(15)
 #' tree.comp(tr, tr2)
 #' tree.comp(tr, tr2, method="PH85")
 #' tree.comp(tr, tr2, method="shallow")
 #' 
 #' @importFrom ape unroot
+#' @importFrom ape rtree
 #' @importFrom ape prop.part
 #' @importFrom ape node.depth
 #' @importFrom stats median

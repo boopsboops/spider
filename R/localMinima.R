@@ -24,15 +24,17 @@
 #' 
 #' 
 #' data(anoteropsis)
-#' anoDist <- dist.dna(anoteropsis)
+#' anoDist <- ape::dist.dna(anoteropsis)
 #' 
 #' anoThresh <- localMinima(anoDist)
-#' plot(anoThresh)
+#' graphics::plot(anoThresh)
 #' anoThresh$localMinima
 #' #Often the first value is the one to go for:
 #' anoThresh$localMinima[1]
 #' 
 #' @importFrom stats density
+#' @importFrom ape dist.dna
+#' @importFrom graphics plot
 #' @export localMinima
 localMinima <- function(distobj){
 	den <- density(distobj)

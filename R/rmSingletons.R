@@ -15,7 +15,7 @@
 #' @examples
 #' 
 #' data(anoteropsis)
-#' anoDist <- dist.dna(anoteropsis)
+#' anoDist <- ape::dist.dna(anoteropsis)
 #' anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"), 
 #'     function(x) paste(x[1], x[2], sep="_"))
 #' 
@@ -23,12 +23,12 @@
 #' rmSingletons(anoSpp, exclude=FALSE)
 #' 
 #' data(dolomedes)
-#' doloDist <- dist.dna(dolomedes)
+#' doloDist <- ape::dist.dna(dolomedes)
 #' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 #' 
 #' rmSingletons(doloSpp)
 #' rmSingletons(doloSpp, exclude=FALSE)
-#' 
+#' @importFrom ape dist.dna
 #' @export rmSingletons
 rmSingletons <- function(sppVector, exclude = TRUE){
 	singletons <- names(which(table(sppVector) == 1))
