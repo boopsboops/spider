@@ -2,19 +2,12 @@
 % Please edit documentation in R/read.BOLD.R
 \name{read.BOLD}
 \alias{read.BOLD}
-\alias{search.BOLD}
-\alias{stats.BOLD}
 \title{Downloads DNA sequences from the Barcode of Life Database (BOLD)}
 \usage{
 read.BOLD(IDs)
 }
 \arguments{
 \item{IDs}{A character vector containing BOLD process ID numbers.}
-
-\item{taxon}{A character vector of the names of the taxa of interest.}
-
-\item{exhaustive}{Logical. Should the function search for more than 500
-process IDs? Default of FALSE.}
 }
 \value{
 \code{search.BOLD} returns a character vector giving the process
