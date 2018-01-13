@@ -21,7 +21,6 @@
 #' BOLD to enable batch retrieval of records, however from October 2012 BOLD
 #' deprecated eFetch without providing a replacement service.
 #' 
-#' @aliases read.BOLD search.BOLD stats.BOLD
 #' @param taxon A character vector of the names of the taxa of interest.
 #' @param exhaustive Logical. Should the function search for more than 500
 #' process IDs? Default of FALSE.

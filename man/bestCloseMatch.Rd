@@ -2,8 +2,6 @@
 % Please edit documentation in R/bestCloseMatch.R
 \name{bestCloseMatch}
 \alias{bestCloseMatch}
-\alias{nearNeighbour}
-\alias{threshID}
 \title{Measures of identification accuracy}
 \usage{
 bestCloseMatch(distobj, sppVector, threshold = 0.01, names = FALSE)

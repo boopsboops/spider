@@ -2,8 +2,6 @@
 % Please edit documentation in R/nearNeighbour.R
 \name{nearNeighbour}
 \alias{nearNeighbour}
-\alias{bestCloseMatch}
-\alias{threshID}
 \title{Measures of identification accuracy}
 \usage{
 nearNeighbour(distobj, sppVector, names = FALSE)

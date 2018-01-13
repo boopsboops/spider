@@ -31,7 +31,6 @@
 #' These functions are not recommended as identification tools, though they can
 #' be used as such when \code{names = TRUE}.
 #' 
-#' @aliases nearNeighbour threshID
 #' @param distobj A distance object (usually from \code{\link{dist.dna}}).
 #' @param sppVector Vector of species names. See \code{\link{sppVector}}.
 #' @param threshold Distance cutoff for identifications. Default of 0.01 (1\%).

@@ -2,7 +2,6 @@
 % Please edit documentation in R/monophyly.R
 \name{monophyly}
 \alias{monophyly}
-\alias{monophylyBoot}
 \title{Species monophyly over a tree}
 \usage{
 monophyly(phy, sppVector, pp = NA, singletonsMono = TRUE)

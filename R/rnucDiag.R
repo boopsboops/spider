@@ -12,7 +12,6 @@
 #' numbers of diagnostic nucleotides that might be expected by random
 #' assortment of specimens.
 #' 
-#' @aliases nucDiag rnucDiag
 #' @param DNAbin An object of class 'DNAbin'.
 #' @param sppVector The species vector (see \code{\link{sppVector}}).
 #' @param n The number of pseudoreplicates to perform. Default of 100

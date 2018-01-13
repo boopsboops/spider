@@ -2,7 +2,6 @@
 % Please edit documentation in R/monophylyBoot.R
 \name{monophylyBoot}
 \alias{monophylyBoot}
-\alias{monophyly}
 \title{Species monophyly over a tree}
 \usage{
 monophylyBoot(phy, sppVector, DNAbin, thresh = 0.7, reroot = TRUE,

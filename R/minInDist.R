@@ -14,7 +14,6 @@
 #' \code{minInDist} returns the minimum intra-specific distance for each
 #' individual.
 #' 
-#' @aliases nonConDist maxInDist minInDist
 #' @param distobj Distance matrix.
 #' @param sppVector Species vector (see \code{\link{sppVector}}). Default of
 #' NULL.

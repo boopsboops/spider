@@ -2,7 +2,6 @@
 % Please edit documentation in R/rnucDiag.R
 \name{rnucDiag}
 \alias{rnucDiag}
-\alias{nucDiag}
 \title{Nucleotide diagnostics for species alignments}
 \usage{
 rnucDiag(DNAbin, sppVector, n = 100)

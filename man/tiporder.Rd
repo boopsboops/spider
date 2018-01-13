@@ -32,7 +32,7 @@ tiporder(anoTree, labels = FALSE)
 data(woodmouse)
 woodTree <- ape::nj(ape::dist.dna(woodmouse))
 tiporder(woodTree)
-tiporder(ladderize(woodTree))
+tiporder(ape::ladderize(woodTree))
 
 }
 \author{

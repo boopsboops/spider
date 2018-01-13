@@ -23,10 +23,11 @@
 #' data(woodmouse)
 #' woodTree <- ape::nj(ape::dist.dna(woodmouse))
 #' tiporder(woodTree)
-#' tiporder(ladderize(woodTree))
+#' tiporder(ape::ladderize(woodTree))
 #' 
 #' @importFrom ape nj
 #' @importFrom ape dist.dna
+#' @importFrom ape ladderize
 #' @export tiporder
 tiporder <- function(phy, labels = TRUE){
 	nn <- length(phy$tip.label) #How many tips on the tree?

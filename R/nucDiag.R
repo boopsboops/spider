@@ -12,7 +12,6 @@
 #' numbers of diagnostic nucleotides that might be expected by random
 #' assortment of specimens.
 #' 
-#' @aliases nucDiag rnucDiag
 #' @param DNAbin An object of class 'DNAbin'.
 #' @param sppVector The species vector (see \code{\link{sppVector}}).
 #' @return \code{nucDiag} returns a list giving the pure, simple diagnostic

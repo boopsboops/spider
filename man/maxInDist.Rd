@@ -2,8 +2,6 @@
 % Please edit documentation in R/maxInDist.R
 \name{maxInDist}
 \alias{maxInDist}
-\alias{nonConDist}
-\alias{minInDist}
 \title{Nearest non-conspecific and maximum intra-specific distances}
 \usage{
 maxInDist(distobj, sppVector = NULL, propZero = FALSE, rmNA = FALSE)

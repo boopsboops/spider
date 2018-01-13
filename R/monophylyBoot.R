@@ -11,7 +11,6 @@
 #' Rerooting is done on the longest internal edge in the tree returned by
 #' \code{nj(dist.dna(DNAbin))}.
 #' 
-#' @aliases monophyly monophylyBoot
 #' @param phy A tree of class `phylo'.
 #' @param sppVector Species vector. See \code{\link{sppVector}}
 #' @param pp Object of class `prop.part'. Assists in speeding up the function,

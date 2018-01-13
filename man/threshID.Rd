@@ -2,8 +2,6 @@
 % Please edit documentation in R/threshID.R
 \name{threshID}
 \alias{threshID}
-\alias{bestCloseMatch}
-\alias{nearNeighbour}
 \title{Measures of identification accuracy}
 \usage{
 threshID(distobj, sppVector, threshold = 0.01, names = FALSE)

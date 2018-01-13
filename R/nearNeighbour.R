@@ -31,7 +31,6 @@
 #' These functions are not recommended as identification tools, though they can
 #' be used as such when \code{names = TRUE}.
 #' 
-#' @aliases bestCloseMatch threshID
 #' @param distobj A distance object (usually from \code{\link{dist.dna}}).
 #' @param sppVector Vector of species names. See \code{\link{sppVector}}.
 #' @param names Logical. Should the names of the nearest match be shown?

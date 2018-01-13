@@ -2,8 +2,6 @@
 % Please edit documentation in R/search.BOLD.R
 \name{search.BOLD}
 \alias{search.BOLD}
-\alias{read.BOLD}
-\alias{stats.BOLD}
 \title{Downloads DNA sequences from the Barcode of Life Database (BOLD)}
 \usage{
 search.BOLD(taxon, exhaustive = FALSE)
