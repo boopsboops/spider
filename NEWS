@@ -1,4 +1,16 @@
 ############################################
+                                SPIDER VERSION 1.5.0
+				Released 13 January 2018
+				
+				
+-- Moved from R-Forge (https://r-forge.r-project.org/projects/spider/).
+-- Now at Github (https://github.com/boopsboops/spider).
+-- Now using Roxygen documentation (Rd source now in R functions).
+-- Fixes to broken man pages.
+-- Imported package functions now explicitly called using 'importFrom' and automatically added to namespace.
+-- Added the testthat infrastructure
+
+############################################
                                 SPIDER VERSION 1.4-2
 				Released 13 May 2017
 				
