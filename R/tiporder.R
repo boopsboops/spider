@@ -15,17 +15,18 @@
 #' @examples
 #' 
 #' data(anoteropsis)
-#' anoTree <- nj(dist.dna(anoteropsis))
+#' anoTree <- ape::nj(ape::dist.dna(anoteropsis))
 #' tiporder(anoTree)
 #' tiporder(anoTree, labels = FALSE)
 #' 
 #' 
 #' data(woodmouse)
-#' woodTree <- nj(dist.dna(woodmouse))
+#' woodTree <- ape::nj(ape::dist.dna(woodmouse))
 #' tiporder(woodTree)
 #' tiporder(ladderize(woodTree))
 #' 
-#' 
+#' @importFrom ape nj
+#' @importFrom ape dist.dna
 #' @export tiporder
 tiporder <- function(phy, labels = TRUE){
 	nn <- length(phy$tip.label) #How many tips on the tree?

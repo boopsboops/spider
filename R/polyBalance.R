@@ -17,12 +17,14 @@
 #' @examples
 #' 
 #' 	set.seed(55)
-#' 	tr <- rtree(15)
-#' 	tr2 <- di2multi(tr, tol=0.02)
+#' 	tr <- ape::rtree(15)
+#' 	tr2 <- ape::di2multi(tr, tol=0.02)
 #' 	polyBalance(tr)
 #' 	polyBalance(tr2)
 #' 
 #' @importFrom ape node.depth
+#' @importFrom ape rtree
+#' @importFrom ape di2multi
 #' @export polyBalance
 polyBalance <- function(phy){
 	nd <- node.depth(phy)

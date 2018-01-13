@@ -15,7 +15,6 @@
 #' @aliases nucDiag rnucDiag
 #' @param DNAbin An object of class 'DNAbin'.
 #' @param sppVector The species vector (see \code{\link{sppVector}}).
-#' @param n The number of pseudoreplicates to perform. Default of 100
 #' @return \code{nucDiag} returns a list giving the pure, simple diagnostic
 #' nucleotides (i.e. those nucleotides that are fixed within species and
 #' different from all other species) for each species in the species vector. A
@@ -30,7 +29,7 @@
 #' \item{rndFreq}{A list of frequency distributions of the number of diagnostic
 #' nucleotides in groups formed by 1 sequence, 2 sequences, etc.}
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{slideNucDiag}}
+#' @seealso \code{\link{slideNucDiag}}, \code{\link{rnucDiag}}
 #' @references Sarkar, I., Planet, P., & DeSalle, R. (2008). CAOS software for
 #' use in character- based DNA barcoding. _Molecular Ecology Resources_ *8*
 #' 1256-1259

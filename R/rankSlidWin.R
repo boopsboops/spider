@@ -37,7 +37,7 @@
 #' @examples
 #' 
 #' data(dolomedes)
-#' doloDist <- dist.dna(dolomedes)
+#' doloDist <- ape::dist.dna(dolomedes)
 #' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 #' 
 #' doloSlide <- slideAnalyses(dolomedes, doloSpp, 200, interval = 10, treeMeasures = TRUE)
@@ -52,6 +52,7 @@
 #'     treeMeasures = TRUE)
 #' rankSlidWin(doloSlide3)
 #' 
+#' @importFrom ape dist.dna
 #' @importFrom utils head
 #' @export rankSlidWin
 rankSlidWin <- 

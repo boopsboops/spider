@@ -33,8 +33,8 @@
 #' doloHaplo <- dolomedes[sample(37, size = 200, replace = TRUE), ] 
 #' dolocurv <- haploAccum(doloHaplo, method = "random", permutations = 100)
 #' 
-#' plot(dolocurv)
-#' plot(dolocurv, add = FALSE, ci = 2, ci.type = "polygon", col = "blue", ci.col = "red", 
+#' graphics::plot(dolocurv)
+#' graphics::plot(dolocurv, add = FALSE, ci = 2, ci.type = "polygon", col = "blue", ci.col = "red", 
 #'     ci.lty = 1)
 #' 
 #' @importFrom graphics par

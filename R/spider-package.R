@@ -86,6 +86,30 @@ NULL
 
 
 
+#' Cytochrome b Gene Sequences of Woodmice
+#' 
+#' This is a set of 15 sequences of the mitochondrial gene cytochrome
+#' \emph{b} of the woodmouse (\emph{Apodemus sylvaticus}) which is a
+#' subset of the data analysed by Michaux et al. (2003). The full data
+#' set is available through GenBank (accession numbers AJ511877 to
+#' AJ511987). Dataset from the ape package.
+#'
+#'
+#' @name woodmouse
+#' @docType data
+#' @format A DNAbin object containing 8 sequences with a length of 18 base
+#' pairs stored as a matrix.
+#' @source Michaux, J. R., Magnanou, E., Paradis, E., Nieberding, C. and Libois,
+#' R. (2003) Mitochondrial phylogeography of the Woodmouse
+#' (\emph{Apodemus sylvaticus}) in the Western Palearctic region.
+#' _Molecular Ecology_ *12*, 685-697
+#' @keywords Datasets
+NULL
+
+
+
+
+
 #' Species Identity and Evolution in R
 #' 
 #' Spider: SPecies IDentity and Evolution in R, is an R package implementing a

@@ -48,7 +48,7 @@ exploration is required.
 
 
 data(dolomedes)
-doloDist <- dist.dna(dolomedes)
+doloDist <- ape::dist.dna(dolomedes)
 doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 
 doloOrd <- ordinDNA(doloDist, doloSpp)

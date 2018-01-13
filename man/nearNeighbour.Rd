@@ -15,8 +15,6 @@ nearNeighbour(distobj, sppVector, names = FALSE)
 
 \item{names}{Logical. Should the names of the nearest match be shown?
 Default of FALSE.}
-
-\item{threshold}{Distance cutoff for identifications. Default of 0.01 (1\%).}
 }
 \value{
 \code{bestCloseMatch} and \code{threshID} return a character vector
@@ -67,7 +65,7 @@ be used as such when \code{names = TRUE}.
 
 
 data(anoteropsis)
-anoDist <- dist.dna(anoteropsis)
+anoDist <- ape::dist.dna(anoteropsis)
 anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split = "_"), 
     function(x) paste(x[1], x[2], sep = "_"))
 
@@ -79,7 +77,7 @@ threshID(anoDist, anoSpp)
 threshID(anoDist, anoSpp, threshold = 0.003)
 
 data(dolomedes)
-doloDist <- dist.dna(dolomedes)
+doloDist <- ape::dist.dna(dolomedes)
 doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 
 bestCloseMatch(doloDist, doloSpp)
@@ -96,7 +94,7 @@ barcoding and taxonomy in Diptera: a tale of high intraspecific variability
 and low identification success. _Systematic Biology_ *55* (5) 715-728.
 }
 \seealso{
-\code{\link{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
+\code{\link{nearNeighbour}}, \code{\link{threshID}}, \code{\link{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
 Also as \code{\link{help}}, ~~~
 }
 \author{

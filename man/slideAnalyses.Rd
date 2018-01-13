@@ -71,7 +71,7 @@ some sequences solely contain missing data.
 
 \dontrun{
 data(dolomedes)
-doloDist <- dist.dna(dolomedes)
+doloDist <- ape::dist.dna(dolomedes)
 doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 
 slideAnalyses(dolomedes, doloSpp, 200, interval=10, treeMeasures=TRUE)

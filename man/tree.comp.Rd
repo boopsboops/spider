@@ -52,9 +52,9 @@ This function does not take into account differences in branch length. The
 \examples{
 
 set.seed(15)
-tr <- rtree(15)
+tr <- ape::rtree(15)
 set.seed(22)
-tr2 <- rtree(15)
+tr2 <- ape::rtree(15)
 tree.comp(tr, tr2)
 tree.comp(tr, tr2, method="PH85")
 tree.comp(tr, tr2, method="shallow")

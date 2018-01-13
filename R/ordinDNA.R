@@ -37,13 +37,14 @@
 #' 
 #' 
 #' data(dolomedes)
-#' doloDist <- dist.dna(dolomedes)
+#' doloDist <- ape::dist.dna(dolomedes)
 #' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 #' 
 #' doloOrd <- ordinDNA(doloDist, doloSpp)
 #' doloOrd
 #' 
 #' @importFrom stats cmdscale
+#' @importFrom ape dist.dna
 #' @export ordinDNA
 ordinDNA <- function(distobj, sppVector, ...){
 	#Conduct Principal Coordinates Analysis

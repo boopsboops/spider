@@ -14,12 +14,13 @@
 #' @examples
 #' 
 #' data(dolomedes)
-#' doloDist <- dist.dna(dolomedes)
+#' doloDist <- ape::dist.dna(dolomedes)
 #' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 #' 
 #' sppDistMatrix(doloDist, doloSpp)
 #' 
 #' 
+#' @importFrom ape dist.dna
 #' @export sppDistMatrix
 sppDistMatrix <-
 function(distobj, sppVector){

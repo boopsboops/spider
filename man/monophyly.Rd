@@ -19,20 +19,6 @@ if it has been called already. Default of NA, calling
 \item{singletonsMono}{Logical. Should singletons (i.e. only a single
 specimen representing that species) be treated as monophyletic? Default of
 TRUE. Possible values of FALSE and NA.}
-
-\item{DNAbin}{An object of class 'DNAbin'. Required for calculating
-bootstrap values.}
-
-\item{thresh}{Numeric between 0 and 1. Bootstrap threshold under which
-potentially monophyletic species are negated. Default of 0.7.}
-
-\item{reroot}{Logical. Should the bootstrap replicates be rerooted on the
-longest edge? Default of TRUE.}
-
-\item{reps}{Numeric. Number of bootstrap replications. Default of 1000.}
-
-\item{block}{The number of nucleotides that will be resampled together.
-Default of 3 to resample on the codon level.}
 }
 \value{
 \code{monophyly} returns a logical vector, stating if each species
@@ -62,7 +48,7 @@ Rerooting is done on the longest internal edge in the tree returned by
 
 #Random trees
 set.seed(16)
-tr <- rtree(15)
+tr <- ape::rtree(15)
 spp <- rep(LETTERS[1:5], rep(3,5))
 monophyly(tr, spp)
 
@@ -73,7 +59,7 @@ monophyly(tr2, spp2)
 #Empirical data
 \dontrun{
 data(anoteropsis)
-anoTree <- nj(dist.dna(anoteropsis))
+anoTree <- ape::nj(ape::dist.dna(anoteropsis))
 anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"), 
     function(x) paste(x[1], x[2], sep="_"))
 
@@ -86,7 +72,7 @@ anoMono <- monophyly(anoTree, anoSpp)
 anoMono[match(anoSpp, unique(anoSpp))]
 
 data(woodmouse)
-woodTree <- nj(dist.dna(woodmouse))
+woodTree <- ape::nj(ape::dist.dna(woodmouse))
 woodSpp <- c("D", "C", "C", "A", "A", "E", "A", "F", "C", "F", "E", "D", "A", "A", "E")
 unique(woodSpp)
 monophyly(woodTree, woodSpp)

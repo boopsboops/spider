@@ -15,8 +15,8 @@
 #' @keywords Barcoding Utilities
 #' @examples
 #' 
-#' layout(matrix(1:6, ncol=1))
-#' par(mar=c(0.5, 0, 0.5, 0))
+#' graphics::layout(matrix(1:6, ncol=1))
+#' graphics::par(mar=c(0.5, 0, 0.5, 0))
 #' data(woodmouse)
 #' seeBarcode(woodmouse[1,])
 #' seeBarcode(woodmouse[1,], col=c("pink", "orange", "steelblue", "yellow"))
@@ -25,6 +25,8 @@
 #' 
 #' @importFrom graphics plot
 #' @importFrom graphics abline
+#' @importFrom graphics layout
+#' @importFrom graphics par
 #' @export seeBarcode
 seeBarcode <- 
 function(seq, col=c("green", "blue", "black", "red")){

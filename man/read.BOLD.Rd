@@ -73,7 +73,7 @@ search.BOLD(c("Danio kyathit", "Dolomedes", "Sitona discoideus"))
 nn <- search.BOLD("Pisauridae")
 pisaurid <- read.BOLD(nn)
 
-write.dna(pisaurid, "filename.fas", format="fasta")}
+ape::write.dna(pisaurid, "filename.fas", format="fasta")}
 
 }
 \references{
@@ -82,7 +82,7 @@ BOLD web services: \url{http://services.boldsystems.org/}.
 BOLD version 3.0 \url{http://v3.boldsystems.org/}.
 }
 \seealso{
-\code{\link{read.GB}}. %% ~~objects to See Also as
+\code{\link{stats.BOLD}}, \code{\link{search.BOLD}}, \code{\link{read.GB}}. %% ~~objects to See Also as
 \code{\link{help}}, ~~~
 }
 \author{

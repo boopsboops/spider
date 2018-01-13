@@ -26,16 +26,17 @@
 #' slidND <- slideNucDiag(dolomedes, doloSpp, 200, interval = 3)
 #' 
 #' #Number of basepairs for each species
-#' matplot(t(slidND), type = "l")
+#' graphics::matplot(t(slidND), type = "l")
 #' 
 #' #Number of basepairs for a single species
-#' plot(slidND[4, ], type = "l")
+#' graphics::plot(slidND[4, ], type = "l")
 #' 
 #' #Total number of basepairs per window
-#' plot(colSums(slidND), type = "l")
+#' graphics::plot(colSums(slidND), type = "l")
 #' 
 #' 
-#' 
+#' @importFrom graphics plot
+#' @importFrom graphics matplot
 #' @export slideNucDiag
 slideNucDiag <- 
 function(DNAbin, sppVector, width, interval = 1){

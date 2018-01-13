@@ -34,11 +34,11 @@ doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 
 doloSlide <- slideAnalyses(dolomedes,  doloSpp, 200, interval=10, treeMeasures=TRUE)
 
-plot(doloSlide)
+graphics::plot(doloSlide)
 
 doloBox <- slideBoxplots(dolomedes,  doloSpp, 200, interval=10, method="overall")
 
-plot(doloBox)
+graphics::plot(doloBox)
 
 
 data(anoteropsis)
@@ -47,8 +47,8 @@ anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"),
 
 anoBox <- slideBoxplots(anoteropsis,  anoSpp, 200, interval=10, method="interAll")
 
-plot(anoBox)
-plot(anoBox, outliers=TRUE)
+graphics::plot(anoBox)
+graphics::plot(anoBox, outliers=TRUE)
 
 
 }

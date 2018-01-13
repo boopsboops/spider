@@ -32,10 +32,10 @@ species identity to get an indication of potential threshold values.
 
 
 data(anoteropsis)
-anoDist <- dist.dna(anoteropsis)
+anoDist <- ape::dist.dna(anoteropsis)
 
 anoThresh <- localMinima(anoDist)
-plot(anoThresh)
+graphics::plot(anoThresh)
 anoThresh$localMinima
 #Often the first value is the one to go for:
 anoThresh$localMinima[1]

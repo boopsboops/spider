@@ -37,9 +37,9 @@ blockAlignment(salticidae)
 blockAlignment(salticidae, mode = "longest")
 blockAlignment(salticidae, mode = NULL, range = c(200, 600))
 
-image(blockAlignment(salticidae))
-image(blockAlignment(salticidae, mode = "longest"))
-image(blockAlignment(salticidae, mode = NULL, range = c(200, 600)))
+graphics::image(blockAlignment(salticidae))
+graphics::image(blockAlignment(salticidae, mode = "longest"))
+graphics::image(blockAlignment(salticidae, mode = NULL, range = c(200, 600)))
 
 }
 \author{

@@ -46,7 +46,7 @@ individual.
 \examples{
 
 data(anoteropsis)
-anoDist <- dist.dna(anoteropsis)
+anoDist <- ape::dist.dna(anoteropsis)
 anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"), 
     function(x) paste(x[1], x[2], sep="_"))
 
@@ -59,17 +59,15 @@ maxInDist(anoDist, anoSpp, propZero=TRUE)
 #Barcoding gap
 inter <- nonConDist(anoDist, anoSpp)
 intra <- maxInDist(anoDist, anoSpp)
-hist(inter-intra)
+graphics::hist(inter-intra)
 
 #An alternative way of plotting the gap
 bnd <- cbind(data.frame(inter, intra))
 ord <- bnd[order(bnd$inter),]
-plot(ord$inter, type="n", ylab="Percent K2P distance", xlab="Individual")
+graphics::plot(ord$inter, type="n", ylab="Percent K2P distance", xlab="Individual")
 segCol <- rep("gray50", length(ord$inter))
 segCol[ord$inter-ord$intra < 0] <- "red"
-segments(x0=1:length(ord$inter), y0=ord$inter, y1=ord$intra, col=segCol, lwd=6)
-
-
+graphics::segments(x0=1:length(ord$inter), y0=ord$inter, y1=ord$intra, col=segCol, lwd=6)
 
 }
 \author{

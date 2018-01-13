@@ -46,7 +46,7 @@
 #' 17 Dec 2012: A new version of \code{read.BOLD} has been released that
 #' appears to work (for the time being).
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{read.GB}}. %% ~~objects to See Also as
+#' @seealso \code{\link{stats.BOLD}}, \code{\link{search.BOLD}}, \code{\link{read.GB}}. %% ~~objects to See Also as
 #' \code{\link{help}}, ~~~
 #' @references BOLD web services: \url{http://services.boldsystems.org/}.
 #' 
@@ -62,8 +62,9 @@
 #' nn <- search.BOLD("Pisauridae")
 #' pisaurid <- read.BOLD(nn)
 #' 
-#' write.dna(pisaurid, "filename.fas", format="fasta")}
+#' ape::write.dna(pisaurid, "filename.fas", format="fasta")}
 #' 
+#' @importFrom ape write.dna
 #' @export read.BOLD
 read.BOLD <- function(IDs){
 	allSeqs <- list()

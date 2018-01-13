@@ -24,11 +24,12 @@
 #' blockAlignment(salticidae, mode = "longest")
 #' blockAlignment(salticidae, mode = NULL, range = c(200, 600))
 #' 
-#' image(blockAlignment(salticidae))
-#' image(blockAlignment(salticidae, mode = "longest"))
-#' image(blockAlignment(salticidae, mode = NULL, range = c(200, 600)))
+#' graphics::image(blockAlignment(salticidae))
+#' graphics::image(blockAlignment(salticidae, mode = "longest"))
+#' graphics::image(blockAlignment(salticidae, mode = NULL, range = c(200, 600)))
 #'
 #' @importFrom ape as.DNAbin
+#' @importFrom graphics image
 #' 
 #' @export blockAlignment
 blockAlignment <- function(DNAbin, mode = "shortest", range = NULL, fill = "") {

@@ -52,7 +52,7 @@ data(dolomedes)
 doloHaplo <- dolomedes[sample(37, size = 200, replace = TRUE), ] 
 dolocurv <- haploAccum(doloHaplo, method = "random", permutations = 100)
 dolocurv
-plot(dolocurv)
+graphics::plot(dolocurv)
 
 }
 \references{

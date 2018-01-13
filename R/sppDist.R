@@ -16,7 +16,7 @@
 #' @examples
 #' 
 #' data(dolomedes)
-#' doloDist <- dist.dna(dolomedes)
+#' doloDist <- ape::dist.dna(dolomedes)
 #' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 #' 
 #' doloSpDist <- sppDist(doloDist, doloSpp)
@@ -25,11 +25,11 @@
 #' 
 #' #Histogram of the barcode gap
 #' transGreen <- rgb(0, 1, 0, 0.5) #Make a slightly transparent colour to see some overlap
-#' hist(doloSpDist$inter, col="grey")
-#' hist(doloSpDist$intra, col=transGreen, add=TRUE)
+#' graphics::hist(doloSpDist$inter, col="grey")
+#' graphics::hist(doloSpDist$intra, col=transGreen, add=TRUE)
 #' 
 #' #Boxplot of the same
-#' boxplot(doloSpDist)
+#' graphics::boxplot(doloSpDist)
 #' 
 #' @export sppDist
 sppDist <-
