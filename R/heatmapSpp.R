@@ -45,6 +45,7 @@
 #' @importFrom graphics image
 #' @importFrom graphics text
 #' @importFrom graphics axis
+#' @importFrom ape dist.dna
 #' @export heatmapSpp
 heatmapSpp <- function(distObj, sppVector, col = NULL, axisLabels = NULL, triangle = "both", showData = FALSE, dataRound = 3, dataCEX = 1){
 	if (!is.matrix(distObj)) distObj <- as.matrix(distObj)
