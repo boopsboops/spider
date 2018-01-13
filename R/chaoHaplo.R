@@ -30,7 +30,7 @@
 #' 
 #' chaoHaplo(doloSamp)
 #' 
-#' 
+#' @importFrom pegas haplotype
 #' @export chaoHaplo
 chaoHaplo <- function(DNAbin){
 	haplo <- haplotype(DNAbin)

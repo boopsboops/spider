@@ -31,7 +31,6 @@ in with \code{"fill"}s.
 }
 \examples{
 
-
 data(salticidae)
 salticidae
 blockAlignment(salticidae)

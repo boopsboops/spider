@@ -23,6 +23,8 @@
 #' seeBarcode(woodmouse[1,], col=c("black", "white", "white", "black"))
 #' apply(woodmouse[1:3,], MARGIN=1, FUN=seeBarcode)
 #' 
+#' @importFrom graphics plot
+#' @importFrom graphics abline
 #' @export seeBarcode
 seeBarcode <- 
 function(seq, col=c("green", "blue", "black", "red")){

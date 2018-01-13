@@ -28,7 +28,6 @@ This function considers bases coded as '?', 'N' and '-' as missing data.
 data(anoteropsis)
 seqStat(anoteropsis)
 
-
 }
 \author{
 Rupert Collins <rupertcollins@gmail.com>

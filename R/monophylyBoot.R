@@ -1,3 +1,10 @@
+#' @importFrom ape nj
+#' @importFrom ape dist.dna
+#' @importFrom ape boot.phylo
+#' @importFrom ape root
+#' @importFrom ape nj
+#' @importFrom ape prop.part
+#' @export monophylyBoot
 monophylyBoot <- 
 function (phy, sppVector, DNAbin, thresh = 0.7, reroot = TRUE, pp = NA, singletonsMono = TRUE, reps = 1000, block = 3) 
 {

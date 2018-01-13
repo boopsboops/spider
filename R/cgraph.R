@@ -23,7 +23,8 @@
 #' M <- cbind(x, y)
 #' cgraph(M[1:10,], col = "blue")
 #' 
-#' 
+#' @importFrom utils combn
+#' @importFrom graphics segments
 #' @export cgraph
 cgraph <- function(x, y = NULL, ...){
 	if(!is.null(y)) mat <- cbind(x, y) else mat <- x

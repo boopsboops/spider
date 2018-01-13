@@ -31,7 +31,6 @@ doloSamp <- dolomedes[sample(16, 100, replace=TRUE, prob=c(0.85, rep(0.01, 15)))
 
 chaoHaplo(doloSamp)
 
-
 }
 \references{
 Vink, C. J., McNeill, M. R., Winder, L. M., Kean, J. M., and

@@ -4,8 +4,8 @@
 \alias{plot.ordinDNA}
 \title{Plot an 'ordinDNA' object}
 \usage{
-plot.ordinDNA(x, majorAxes = c(1, 2), plotCol = "default", trans = "CC",
-  textcex = 0.7, pchCentroid = FALSE, sppBounds = "net",
+\method{plot}{ordinDNA}(x, majorAxes = c(1, 2), plotCol = "default",
+  trans = "CC", textcex = 0.7, pchCentroid = FALSE, sppBounds = "net",
   sppNames = TRUE, namePos = "top", ptPch = 21, ptCex = 0.5,
   netWd = 1, ...)
 }
@@ -101,7 +101,6 @@ anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"),
 anoOrd <- ordinDNA(anoDist, anoSpp)
 
 plot(anoOrd, sppBounds = "circles")
-
 
 
 

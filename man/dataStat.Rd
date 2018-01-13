@@ -37,7 +37,6 @@ anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"),
 anoGen <-  sapply(strsplit(anoSpp, split="_"), function(x) x[1])
 dataStat(anoSpp, anoGen)
 
-
 }
 \author{
 Rupert Collins <rupertcollins@gmail.com>

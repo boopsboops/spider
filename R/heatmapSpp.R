@@ -42,6 +42,9 @@
 #' heatmapSpp(anoDist, anoSpp, triangle = "lower", showData = TRUE, dataRound = 1, dataCEX = 0.4)
 #' 
 #' 
+#' @importFrom graphics image
+#' @importFrom graphics text
+#' @importFrom graphics axis
 #' @export heatmapSpp
 heatmapSpp <- function(distObj, sppVector, col = NULL, axisLabels = NULL, triangle = "both", showData = FALSE, dataRound = 3, dataCEX = 1){
 	if (!is.matrix(distObj)) distObj <- as.matrix(distObj)

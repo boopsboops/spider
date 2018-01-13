@@ -63,6 +63,10 @@
 #' slideAnalyses(dolomedes, doloSpp, 200, interval=10, treeMeasures=TRUE)
 #' }
 #' 
+#' @importFrom ape dist.dna
+#' @importFrom ape nj
+#' @importFrom ape node.depth
+#' @importFrom stats median
 #' @export slideAnalyses
 slideAnalyses <-
 function(DNAbin, sppVector, width, interval = 1, distMeasures = TRUE, treeMeasures = FALSE){

@@ -51,6 +51,10 @@
 #' tree.comp(tr, tr2, method="PH85")
 #' tree.comp(tr, tr2, method="shallow")
 #' 
+#' @importFrom ape unroot
+#' @importFrom ape prop.part
+#' @importFrom ape node.depth
+#' @importFrom stats median
 #' @export tree.comp
 tree.comp <-
 function (phy1, phy2, method = "prop") {

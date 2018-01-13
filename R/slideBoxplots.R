@@ -52,6 +52,8 @@
 #' doloInterall <- slideBoxplots(dolomedes, doloSpp, 200, interval=10, method="interAll")
 #' plot(doloInterall)
 #' 
+#' @importFrom graphics boxplot
+#' @importFrom ape dist.dna
 #' @export slideBoxplots
 slideBoxplots <-
 function(DNAbin, sppVector, width, interval = 1, method="nonCon"){

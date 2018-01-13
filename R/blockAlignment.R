@@ -18,7 +18,6 @@
 #' @keywords Data Quality Protocol
 #' @examples
 #' 
-#' \dontrun{
 #' data(salticidae)
 #' salticidae
 #' blockAlignment(salticidae)
@@ -28,8 +27,10 @@
 #' image(blockAlignment(salticidae))
 #' image(blockAlignment(salticidae, mode = "longest"))
 #' image(blockAlignment(salticidae, mode = NULL, range = c(200, 600)))
-#' }
+#'
+#' @importFrom ape as.DNAbin
 #' 
+#' @export blockAlignment
 blockAlignment <- function(DNAbin, mode = "shortest", range = NULL, fill = "") {
 	
 	DNAbin <- as.list(DNAbin)

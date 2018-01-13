@@ -40,6 +40,12 @@
 #' plot(anoBox, outliers=TRUE)
 #' 
 #' 
+#' @importFrom graphics plot
+#' @importFrom graphics abline
+#' @importFrom graphics layout
+#' @importFrom graphics axis
+#' @importFrom graphics bxp
+#' @importFrom stats median
 #' @export plot.slidWin
 plot.slidWin <- 
 function(x, outliers = FALSE, ...){

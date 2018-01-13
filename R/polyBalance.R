@@ -22,6 +22,7 @@
 #' 	polyBalance(tr)
 #' 	polyBalance(tr2)
 #' 
+#' @importFrom ape node.depth
 #' @export polyBalance
 polyBalance <- function(phy){
 	nd <- node.depth(phy)

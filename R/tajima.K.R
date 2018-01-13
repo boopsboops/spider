@@ -21,6 +21,7 @@
 #' tajima.K(anoteropsis)
 #' tajima.K(anoteropsis, prop = FALSE)
 #' 
+#' @importFrom ape dist.dna
 #' @export tajima.K
 tajima.K <-
 function(DNAbin, prop = TRUE){

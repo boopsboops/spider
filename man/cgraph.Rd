@@ -34,7 +34,6 @@ cgraph(x, y)
 M <- cbind(x, y)
 cgraph(M[1:10,], col = "blue")
 
-
 }
 \seealso{
 \code{\link{plot.ordinDNA}}.

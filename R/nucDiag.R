@@ -57,6 +57,7 @@
 #' rnucDiag(anoteropsis, anoSpp, n = 100)
 #' }
 #' 
+#' @importFrom ape seg.sites
 #' @export nucDiag
 nucDiag <- function(DNAbin, sppVector){
 	DNAbin <- as.matrix(DNAbin)

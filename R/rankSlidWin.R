@@ -52,6 +52,7 @@
 #'     treeMeasures = TRUE)
 #' rankSlidWin(doloSlide3)
 #' 
+#' @importFrom utils head
 #' @export rankSlidWin
 rankSlidWin <- 
 function(slidWin, criteria = "mean_distance", num = 10){

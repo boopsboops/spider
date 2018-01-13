@@ -43,6 +43,7 @@
 #' doloOrd <- ordinDNA(doloDist, doloSpp)
 #' doloOrd
 #' 
+#' @importFrom stats cmdscale
 #' @export ordinDNA
 ordinDNA <- function(distobj, sppVector, ...){
 	#Conduct Principal Coordinates Analysis

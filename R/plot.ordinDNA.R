@@ -79,7 +79,12 @@
 #' plot(anoOrd, sppBounds = "circles")
 #' 
 #' 
-#' 
+#' @importFrom stats aggregate
+#' @importFrom stats dist
+#' @importFrom graphics plot
+#' @importFrom graphics symbols
+#' @importFrom graphics points
+#' @importFrom graphics text
 #' @export plot.ordinDNA
 plot.ordinDNA <- function(x, majorAxes = c(1,2), plotCol = "default", trans = "CC", textcex = 0.7, pchCentroid = FALSE, sppBounds = "net", sppNames = TRUE, namePos = "top", ptPch = 21, ptCex = 0.5, netWd = 1, ...){
 	#Colours

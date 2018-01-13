@@ -32,6 +32,7 @@
 #' #Often the first value is the one to go for:
 #' anoThresh$localMinima[1]
 #' 
+#' @importFrom stats density
 #' @export localMinima
 localMinima <- function(distobj){
 	den <- density(distobj)

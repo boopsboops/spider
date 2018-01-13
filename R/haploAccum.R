@@ -42,6 +42,8 @@
 #' dolocurv
 #' plot(dolocurv)
 #' 
+#' @importFrom utils as.roman
+#' @importFrom stats sd
 #' @export haploAccum
 haploAccum<- function (DNAbin, method = "random", permutations = 100, ...){
 

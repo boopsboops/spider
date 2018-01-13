@@ -4,7 +4,7 @@
 \alias{plot.slidWin}
 \title{Plot a 'slidWin' object}
 \usage{
-plot.slidWin(x, outliers = FALSE, ...)
+\method{plot}{slidWin}(x, outliers = FALSE, ...)
 }
 \arguments{
 \item{x}{An object of class `slidWin'.}

@@ -25,7 +25,7 @@
 #' anoGen <-  sapply(strsplit(anoSpp, split="_"), function(x) x[1])
 #' dataStat(anoSpp, anoGen)
 #' 
-#' 
+#' @importFrom stats median
 #' @export dataStat
 dataStat <- function(sppVector, genVector, thresh = 5){
 unSpp <- unique(sppVector)

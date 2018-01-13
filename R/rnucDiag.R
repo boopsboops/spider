@@ -1,3 +1,5 @@
+#' @importFrom stats median
+#' @export rnucDiag
 rnucDiag <- function(DNAbin, sppVector, n = 100){
 	lsv <- length(sppVector)
 	psv <- table(sppVector)/lsv

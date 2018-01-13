@@ -17,7 +17,7 @@
 #' data(anoteropsis)
 #' seqStat(anoteropsis)
 #' 
-#' 
+#' @importFrom stats median
 #' @export seqStat
 seqStat <- function(DNAbin, thresh = 500){
     cd <- checkDNA(DNAbin, gapsAsMissing = TRUE)

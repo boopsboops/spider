@@ -82,6 +82,7 @@
 #' }
 #' 
 #' 
+#' @importFrom ape prop.part
 #' @export monophyly
 monophyly <- 
 function (phy, sppVector, pp = NA, singletonsMono = TRUE) 

@@ -37,6 +37,12 @@
 #' plot(dolocurv, add = FALSE, ci = 2, ci.type = "polygon", col = "blue", ci.col = "red", 
 #'     ci.lty = 1)
 #' 
+#' @importFrom graphics par
+#' @importFrom graphics plot
+#' @importFrom graphics segments
+#' @importFrom graphics matlines
+#' @importFrom graphics polygon
+#' @importFrom graphics lines
 #' @export plot.haploAccum
 plot.haploAccum <-
     function(x, add = FALSE, ci = 2, ci.type = c("bar","line","polygon"), 
