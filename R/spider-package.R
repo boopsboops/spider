@@ -45,6 +45,27 @@ NULL
 
 
 
+#' Cytochrome oxidase I (COI) sequences of world-wide species of Salticidae
+#' 
+#' A set of 41 sequences of the mitochondrial protein-coding gene cytochrome
+#' oxidase I from 41 species of the jumping spider family Salticidae.The
+#' sequences are available on GenBank as accession numbers AY297360 through
+#' AY297400.
+#' 
+#' 
+#' @name salticidae
+#' @docType data
+#' @format A DNAbin object containing 41 sequences with a length of 409 base
+#' pairs stored as a list.
+#' @source Maddison, W. P., and Hedin, M. C. (2003). Jumping spider phylogeny
+#' (Araneae: Salticidae). _Invertebrate Systematics_ *17* 529-549.
+#' @keywords Datasets
+NULL
+
+
+
+
+
 #' Dummy sequences illustrating the categories of diagnostic nucleotides
 #' 
 #' A set of 8 dummy sequences published in Sarkar et al 2008 to illustrate the
@@ -83,18 +104,18 @@ NULL
 #' \code{http://spider.r-forge.r-project.org}.
 #' 
 #' \tabular{ll}{ Package: \tab spider\cr Type: \tab Package\cr Version: \tab
-#' 1.3-0\cr Date: \tab 2013-12-25\cr License: \tab GPL\cr LazyLoad: \tab yes\cr
+#' 1.4-2\cr Date: \tab 2017-05-13\cr License: \tab GPL\cr LazyLoad: \tab yes\cr
 #' }
 #' 
 #' A few of the key functions provided by spider:
 #' 
 #' DNA barcoding: \code{\link{bestCloseMatch}}, \code{\link{nearNeighbour}},
-#' \code{\link{threshID}}, \code{\link{threshOpt}}.
+#' \code{\link{threshID}}, \code{\link{threshOpt}}, \code{\link{heatmapSpp}}.
 #' 
 #' Sliding window: \code{\link{slidingWindow}}, \code{\link{slideAnalyses}},
 #' \code{\link{slideBoxplots}}.
 #' 
-#' Nucleotide diagnostics: \code{\link{nucDiag}}.
+#' Nucleotide diagnostics: \code{\link{nucDiag}}, \code{\link{rnucDiag}}.
 #' 
 #' Morphological techniques: \code{\link{paa}}.
 #' 
@@ -109,9 +130,10 @@ NULL
 #' 
 #' \code{\link{ape-package}}, \code{\link{pegas-package}}.
 #' @references Brown S. D. J., Collins R. A., Boyer S., Lefort M.-C.,
-#' Malumbres-Olarte J., Vink C. J., & Cruickshank R. H. In Press. SPIDER: an R
+#' Malumbres-Olarte J., Vink C. J., & Cruickshank R. H. 2012. SPIDER: an R
 #' package for the analysis of species identity and evolution, with particular
-#' reference to DNA barcoding. _Molecular Ecology Resources_
+#' reference to DNA barcoding. _Molecular Ecology Resources_ 12:562-565. doi:
+#' 10.1111/j.1755-0998.2011.03108.x
 #' @keywords package
 NULL
 
