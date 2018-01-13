@@ -9,3 +9,5 @@ Description: Provides functions for the analysis of species limits and DNA barco
 License: GPL
 LazyLoad: yes
 Depends: ape, pegas
+RoxygenNote: 6.0.1
+Suggests: testthat
