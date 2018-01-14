@@ -50,9 +50,8 @@ seqStat(anoteropsis)
 ```
 
 ```r
-# load up ape and make a distance matrix from raw p-distances
-library("ape")
-anoDist <- dist.dna(anoteropsis, model="raw", pairwise.deletion=TRUE)
+# make a distance matrix from raw p-distances
+anoDist <- ape::dist.dna(anoteropsis, model="raw", pairwise.deletion=TRUE)
 ```
 
 ```r
