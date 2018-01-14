@@ -4,6 +4,8 @@
 
 # spider
 
+## Overview
+
 The official GitHub repository for the R package "SPecies IDentity and Evolution in R" (spider).
 
 `spider` provides functions for the analysis of species limits and DNA barcoding data. Included are functions for generating important summary statistics from DNA barcode data, assessing specimen identification efficacy, testing and optimizing divergence threshold limits, assessment of diagnostic nucleotides, and calculation of the probability of reciprocal monophyly. Additionally, a sliding window function offers opportunities to analyse information across a gene, often used for marker design in degraded DNA studies. Further information on the package has been published in [Brown et al. (2012)](http://dx.doi.org/10.1111/j.1755-0998.2011.03108.x).
