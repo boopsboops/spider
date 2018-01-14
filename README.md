@@ -58,11 +58,10 @@ anoDist <- dist.dna(anoteropsis, model="raw", pairwise.deletion=TRUE)
 ```r
 # calculate identification success based on a 1% interspecific threshold
 table(bestCloseMatch(distobj=anoDist, sppVector=anoSpp, threshold=0.01))
-```
 
 ```r
-##  correct incorrect     no id 
-##       11         2        20 
+#>  correct incorrect     no id 
+#>       11         2        20 
 ```
 
 ## Current contributors
