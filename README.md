@@ -42,6 +42,8 @@ data(anoteropsis)
 # make a quick species vector (unique species name for each individual) from the taxon labels
 anoSpp <- sapply(strsplit(rownames(anoteropsis), split="_"), function(x) paste(x[1], x[2]))
 head(anoSpp)
+
+#> [1] "Artoria flavimanus" "Artoria separata" "Anoteropsis adumbrata" "Anoteropsis adumbrata" "Anoteropsis aerescens" "Anoteropsis aerescens"
 ```
 
 ```r
