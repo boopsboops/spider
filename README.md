@@ -41,14 +41,15 @@ data(anoteropsis)
 ```r
 # make a quick species vector (unique species name for each individual) from the taxon labels
 anoSpp <- sapply(strsplit(rownames(anoteropsis), split="_"), function(x) paste(x[1], x[2]))
-head(anoSpp)
-
-#> [1] "Artoria flavimanus" "Artoria separata" "Anoteropsis adumbrata" "Anoteropsis adumbrata" "Anoteropsis aerescens" "Anoteropsis aerescens"
+head(anoSpp, n=4)
+#> [1] "Artoria flavimanus" "Artoria separata" "Anoteropsis adumbrata" "Anoteropsis adumbrata"
 ```
 
 ```r
 # get some statistics about the sequence lengths
 seqStat(anoteropsis)
+#> Min    Max   Mean Median Thresh 
+#> 395    409    408    409     33
 ```
 
 ```r
@@ -59,9 +60,8 @@ anoDist <- ape::dist.dna(anoteropsis, model="raw", pairwise.deletion=TRUE)
 ```r
 # calculate identification success based on a 1% interspecific threshold
 table(bestCloseMatch(distobj=anoDist, sppVector=anoSpp, threshold=0.01))
-
-#>  correct incorrect     no id 
-#>       11         2        20 
+#> correct incorrect     no id 
+#>      11         2        20 
 ```
 
 ## Current contributors
