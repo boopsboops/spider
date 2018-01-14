@@ -32,38 +32,33 @@ devtools::install_github("boopsboops/spider")
 
 ## Examples
 
-Here, we will do a quick "best close match" analysis on a dataset to see how well DNA barcodes can identify individuals in a simulated identification scenario.
-
+Here, we will do a quick "best close match" analysis ([Meier et al. (2006)](http://dx.doi.org/10.1080/10635150600969864)) on a _Anoteropsis_ wolf spider datadataset to see how well DNA barcodes can identify individuals in a simulated identification scenario.
 
 ```r
-# Load up the _Anoteropsis_ wolf spider data.
+# load up the data
 library("spider")
 data(anoteropsis)
 ```
 
-Make a quick species vector (a unique species name for each individual in the dataset) from the taxon labels.
-
 ```r
+# make a quick species vector (a unique species name for each individual in the dataset) from the taxon labels
 anoSpp <- sapply(strsplit(rownames(anoteropsis), split="_"), function(x) paste(x[1], x[2]))
 head(anoSpp)
 ```
 
-Get some statistics about the sequence lengths.
-
 ```r
+# get some statistics about the sequence lengths
 seqStat(anoteropsis)
 ```
 
-Load up `ape` and make a distance matrix from raw p-distances.
-
 ```r
+# load up ape and make a distance matrix from raw p-distances
 library("ape")
 anoDist <- dist.dna(anoteropsis, model="raw", pairwise.deletion=TRUE)
 ```
 
-Calculate identification success with "best close match" of [Meier et al. (2006)](http://dx.doi.org/10.1080/10635150600969864).
-
 ```r
+# calculate identification success
 table(bestCloseMatch(distobj=anoDist, sppVector=anoSpp, threshold=0.01))
 ```
 
