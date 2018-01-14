@@ -41,7 +41,7 @@ data(anoteropsis)
 ```
 
 ```r
-# make a quick species vector (a unique species name for each individual in the dataset) from the taxon labels
+# make a quick species vector (unique species name for each individual) from the taxon labels
 anoSpp <- sapply(strsplit(rownames(anoteropsis), split="_"), function(x) paste(x[1], x[2]))
 head(anoSpp)
 ```
