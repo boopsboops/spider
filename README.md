@@ -8,9 +8,7 @@ The official GitHub repository for the R package "Species Identity and Evolution
 
 `spider` provides functions for the analysis of species limits and DNA barcoding data. Included are functions for generating important summary statistics from DNA barcode data, assessing specimen identification efficacy, testing and optimizing divergence threshold limits, assessment of diagnostic nucleotides, and calculation of the probability of reciprocal monophyly. Additionally, a sliding window function offers opportunities to analyse information across a gene, often used for marker design in degraded DNA studies. Further information on the package has been published in [Brown et al. (2012)](http://dx.doi.org/10.1111/j.1755-0998.2011.03108.x).
 
-For an introduction to the package, visit our `spider` [tutorial](http://spider.r-forge.r-project.org/tutorial/tutorial.pdf) and [manual](http://spider.r-forge.r-project.org/docs/spider-manual.pdf).
-
-Over time, the tutorial will we expanded and moved into GitHub vignettes and project pages. 
+For an introduction to the package, visit our `spider` [tutorial](http://spider.r-forge.r-project.org/tutorial/tutorial.pdf) and [manual](http://spider.r-forge.r-project.org/docs/spider-manual.pdf). Over time, the tutorial will we expanded and moved into GitHub vignettes and project pages. 
 
 If you are interested in previous versions (before v1.5.0) of the `spider` source code, checkout our [old repository](https://r-forge.r-project.org/projects/spider/) hosted at r-forge.
 
@@ -30,7 +28,7 @@ devtools::install_github("boopsboops/spider")
 
 ## Examples
 
-Here, we will do a quick "best close match" analysis ([Meier et al. (2006)](http://dx.doi.org/10.1080/10635150600969864)) on a _Anoteropsis_ wolf spider datadataset to see how well DNA barcodes can identify individuals in a simulated identification scenario.
+Here, we will do a quick "best close match" analysis of [Meier et al. (2006)](http://dx.doi.org/10.1080/10635150600969864) on a _Anoteropsis_ wolf spider dataset ([Vink & Paterson, 2003](http://dx.doi.org/10.1080/10635150600969864)) to see how well DNA barcodes can identify individuals in a simulated identification scenario.
 
 ```r
 # load up the data
@@ -56,7 +54,7 @@ anoDist <- dist.dna(anoteropsis, model="raw", pairwise.deletion=TRUE)
 ```
 
 ```r
-# calculate identification success
+# calculate identification success based on a 1% interspecific threshold
 table(bestCloseMatch(distobj=anoDist, sppVector=anoSpp, threshold=0.01))
 ```
 
@@ -71,4 +69,4 @@ table(bestCloseMatch(distobj=anoDist, sppVector=anoSpp, threshold=0.01))
 
 * Please [report any issues or bugs](https://github.com/boopsboops/spider/issues).
 * License: MIT.
-* Get citation information for `spider` in R doing `citation(package = 'spider')`.
+* Get citation information for `spider` in R by running `citation(package='spider')`.
