@@ -14,7 +14,7 @@ For an introduction to the package, visit our `spider` [tutorial](http://spider.
 
 Over time, the tutorial will we expanded and moved into GitHub vignettes and project pages. 
 
-If you are interested in previous versions (before v1.5.0) of the `spider` source code, checkout our old repository hosted at [r-forge](https://r-forge.r-project.org/projects/spider/).
+If you are interested in previous versions (before v1.5.0) of the `spider` source code, checkout our [old repository](https://r-forge.r-project.org/projects/spider/) hosted at r-forge.
 
 ## Installation
 
@@ -30,17 +30,14 @@ Or development version from GitHub (WORKING).
 devtools::install_github("boopsboops/spider")
 ```
 
-```r
-library("spider")
-```
-
 ## Examples
 
 Here, we will do a quick "best close match" analysis on a dataset to see how well DNA barcodes can identify individuals in a simulated identification scenario.
 
-Load up the _Anoteropsis_ wolf spider data.
 
 ```r
+# Load up the _Anoteropsis_ wolf spider data.
+library("spider")
 data(anoteropsis)
 ```
 
