@@ -58,6 +58,11 @@ anoDist <- dist.dna(anoteropsis, model="raw", pairwise.deletion=TRUE)
 table(bestCloseMatch(distobj=anoDist, sppVector=anoSpp, threshold=0.01))
 ```
 
+```r
+##  correct incorrect     no id 
+##       11         2        20 
+```
+
 ## Current contributors
 
 * [Rupert A. Collins](https://github.com/boopsboops)
