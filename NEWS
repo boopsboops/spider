@@ -1,14 +1,17 @@
 ############################################
                                 SPIDER VERSION 1.5.0
-				Released 13 January 2018
+				Released 15 February 2018
 				
 				
 -- Moved from R-Forge (https://r-forge.r-project.org/projects/spider/).
 -- Now at Github (https://github.com/boopsboops/spider).
+-- Package maintainer now Rupert A. Collins.
 -- Now using Roxygen documentation (Rd source now in R functions).
 -- Fixes to broken man pages.
 -- Imported package functions now explicitly called using 'importFrom' and automatically added to namespace.
--- Added the testthat infrastructure
+-- Added the testthat infrastructure.
+-- Functions `read.BOLD`, `search.BOLD`, and `stats.BOLD` have been deprecated in favour of using the better functions in the rOpenSci 'bold' package.
+-- Function `read.GB` has been deprecated in favour of using the better functions in the 'rentrez', 'traits', and 'ape' packages.
 
 ############################################
                                 SPIDER VERSION 1.4-2
