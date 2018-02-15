@@ -57,6 +57,7 @@ function. \code{search.BOLD} continues to work as intended.
 
 17 Dec 2012: A new version of \code{read.BOLD} has been released that
 appears to work (for the time being).
+15 Feb 2018: 'search.BOLD' is deprecated. Please use the rOpenSci 'bold' package for better functionality.
 }
 
 \examples{

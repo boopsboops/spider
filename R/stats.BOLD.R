@@ -41,6 +41,7 @@
 #' 
 #' 17 Dec 2012: A new version of \code{read.BOLD} has been released that
 #' appears to work (for the time being).
+#' 15 Feb 2018: 'stats.BOLD' is deprecated. Please use the rOpenSci 'bold' package for better functionality.
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
 #' @seealso \code{\link{stats.BOLD}}, \code{\link{search.BOLD}}, \code{\link{read.GB}}. %% ~~objects to See Also as
 #' \code{\link{help}}, ~~~
@@ -64,12 +65,5 @@
 #' @export stats.BOLD
 stats.BOLD <- 
 function(taxon){
-	space <- grep(" ", taxon)
-	if(length(space) > 0) taxon[space] <- sapply(space, function(x) paste("\"", taxon[x], "\"", sep=""))
-	taxon <- paste(taxon, collapse="%20")
-	taxon <- gsub(" ", "%20", taxon)
-	URL <- paste("http://v3.boldsystems.org/index.php/Public_SearchTerms?query=", taxon, sep="")
-	res <- scan(file = URL, what = "", sep = "\n", quiet = TRUE)
-	res <- res[grep("totalRecords", res)]
-	as.numeric(gsub("[^[:digit:]]", "", res))
+    .Deprecated(msg="'stats.BOLD' is deprecated. Please use the 'bold' package.")
 }

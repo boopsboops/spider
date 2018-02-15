@@ -40,6 +40,10 @@ This function is a modification of
 sequence. Additional data currently implemented are the species names and
 the gene region from which sequences were derived.
 }
+\section{Warning}{
+ 15 Feb 2018: 'read.GB' is deprecated. Please use the rOpenSci packages 'rentrez' and 'traits', or 'ape' for better functionality.
+}
+
 \examples{
 
 \dontrun{
