@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/boopsboops/spider.svg?branch=master)](https://travis-ci.org/boopsboops/spider)
-[![rstudio mirror](http://cranlogs.r-pkg.org/badges/grand-total/spider)](https://cran.r-project.org/package=spider)
-[![cran version](http://www.r-pkg.org/badges/version/spider)](https://cran.r-project.org/package=spider)
+[![rstudio mirror](https://cranlogs.r-pkg.org/badges/grand-total/spider)](https://cran.r-project.org/package=spider)
+[![cran version](https://www.r-pkg.org/badges/version/spider)](https://cran.r-project.org/package=spider)
 
 # spider
 
