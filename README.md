@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/boopsboops/spider.svg?branch=master)](https://travis-ci.org/boopsboops/spider)
-[![rstudio mirror](http://cranlogs.r-pkg.org/badges/grand-total/spider)](http://cran.rstudio.com/web/packages/spider/index.html)
+[![rstudio mirror](http://cranlogs.r-pkg.org/badges/grand-total/spider)](https://cran.r-project.org/package=spider)
 [![cran version](http://www.r-pkg.org/badges/version/spider)](https://cran.r-project.org/package=spider)
 
 # spider
@@ -68,7 +68,7 @@ table(bestCloseMatch(distobj=anoDist, sppVector=anoSpp, threshold=0.01))
 
 * [Rupert A. Collins](https://github.com/boopsboops)
 * [Samuel D. J. Brown](https://github.com/)
-* [Stephane Boyer](https://github.com/)
+* [Stephane Boyer](https://github.com/ProfStephaneBoyer)
 
 
 ## Meta
