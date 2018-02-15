@@ -47,7 +47,7 @@
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
 #' @seealso \code{\link{stats.BOLD}}, \code{\link{search.BOLD}}, \code{\link{read.GB}}. %% ~~objects to See Also as
 #' \code{\link{help}}, ~~~
-#' @references BOLD web services: \url{http://services.boldsystems.org/}.
+#' @references BOLD web services: \url{http://www.boldsystems.org/index.php/resources/api?type=webservices}.
 #' 
 #' BOLD version 3.0 \url{http://v3.boldsystems.org/}.
 #' @keywords Barcoding Datasets

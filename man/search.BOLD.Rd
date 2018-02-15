@@ -74,7 +74,7 @@ ape::write.dna(pisaurid, "filename.fas", format="fasta")}
 
 }
 \references{
-BOLD web services: \url{http://services.boldsystems.org/}.
+BOLD web services: \url{http://www.boldsystems.org/index.php/resources/api?type=webservices}.
 
 BOLD version 3.0 \url{http://v3.boldsystems.org/}.
 }
