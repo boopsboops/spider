@@ -2,6 +2,8 @@ This is a re-release of the 'spider' package. The package was previously on CRAN
 
 Maintainer has changed to Rupert A. Collins (rupertcollins@gmail.com).
 
+16.02.18 - MIT license changed to CRAN version.
+
 ## Test environments
 
 * local Ubuntu 16.04 LTS, R 3.4.3
