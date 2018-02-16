@@ -16,13 +16,13 @@ If you are interested in previous versions (before v1.5.0) of the `spider` sourc
 
 ## Installation
 
-Stable CRAN version (NOT YET WORKING).
+Stable CRAN version:
 
 ```r
 install.packages("spider")
 ```
 
-Or development version from GitHub (WORKING).
+Or development version from GitHub:
 
 ```r
 devtools::install_github("boopsboops/spider")
