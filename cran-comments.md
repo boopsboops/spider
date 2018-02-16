@@ -1,8 +1,13 @@
-This is a re-release of the 'spider' package. The package was previously on CRAN up until v1.3-0, but was removed. The issues are fixed, and development has moved to https://github.com/boopsboops/spider. 
+## Resubmission 16.02.18
 
-Maintainer has changed to Rupert A. Collins (rupertcollins@gmail.com).
+* MIT license changed to CRAN version
+* DESCRIPTION tidied up (superfluous text deleted, doi corrected)
 
-16.02.18 - MIT license changed to CRAN version.
+## Notes
+
+* This is a re-release of the 'spider' package. The package was previously on CRAN up until v1.3-0, but was removed. The issues are fixed, and development has moved to https://github.com/boopsboops/spider. 
+
+* Maintainer has changed to Rupert A. Collins (rupertcollins@gmail.com).
 
 ## Test environments
 
