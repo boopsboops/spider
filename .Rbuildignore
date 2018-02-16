@@ -2,3 +2,4 @@ temp
 .travis.yml
 .gitignore
 cran-comments.md
+LICENSE
