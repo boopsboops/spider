@@ -1,7 +1,7 @@
 Package: spider
 Type: Package
 Title: Species Identity and Evolution in R
-Version: 1.5.0
+Version: 1.5.0.9000
 Date: 2018-02-15
 Author: Samuel Brown, Rupert Collins, Stephane Boyer, Marie-Caroline Lefort, Jagoba Malumbres-Olarte, Cor Vink, Rob Cruickshank
 Maintainer: Rupert A. Collins <rupertcollins@gmail.com>
