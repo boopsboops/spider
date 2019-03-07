@@ -1,3 +1,7 @@
 language: r
-sudo: false
+sudo: true
 cache: packages
+
+before_install:
+  - sudo apt-get --yes --force-yes update -qq
+  - sudo apt-get install -y libudunits2-dev
