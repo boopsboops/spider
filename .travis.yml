@@ -1,5 +1,4 @@
 language: r
-sudo: true
 cache: packages
 
 addons:
@@ -7,3 +6,6 @@ addons:
     packages:
       - libxml2-dev
       - libudunits2-dev
+      - gdal-bin
+      - libgdal-dev 
+      - libgdal1-dev
