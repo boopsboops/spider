@@ -4,8 +4,8 @@
 \alias{slideAnalyses}
 \title{Sliding window analyses}
 \usage{
-slideAnalyses(DNAbin, sppVector, width, interval = 1, distMeasures = TRUE,
-  treeMeasures = FALSE)
+slideAnalyses(DNAbin, sppVector, width, interval = 1,
+  distMeasures = TRUE, treeMeasures = FALSE)
 }
 \arguments{
 \item{DNAbin}{A DNA alignment of class `DNAbin'.}

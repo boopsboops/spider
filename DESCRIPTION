@@ -9,5 +9,5 @@ Description: Analysis of species limits and DNA barcoding data. Included are fun
 License: MIT + file LICENSE
 LazyLoad: yes
 Imports: ape, pegas, graphics, stats, utils
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 Suggests: testthat

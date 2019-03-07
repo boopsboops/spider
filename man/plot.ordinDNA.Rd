@@ -5,9 +5,9 @@
 \title{Plot an 'ordinDNA' object}
 \usage{
 \method{plot}{ordinDNA}(x, majorAxes = c(1, 2), plotCol = "default",
-  trans = "CC", textcex = 0.7, pchCentroid = FALSE, sppBounds = "net",
-  sppNames = TRUE, namePos = "top", ptPch = 21, ptCex = 0.5,
-  netWd = 1, ...)
+  trans = "CC", textcex = 0.7, pchCentroid = FALSE,
+  sppBounds = "net", sppNames = TRUE, namePos = "top", ptPch = 21,
+  ptCex = 0.5, netWd = 1, ...)
 }
 \arguments{
 \item{x}{An object of class `ordinDNA'.}
