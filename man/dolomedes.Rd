@@ -4,8 +4,10 @@
 \name{dolomedes}
 \alias{dolomedes}
 \title{Cytochrome oxidase I (COI) sequences of New Zealand _Dolomedes_ species}
-\format{A DNAbin object containing 37 sequences with a length of 850 base
-pairs stored as a matrix.}
+\format{
+A DNAbin object containing 37 sequences with a length of 850 base
+pairs stored as a matrix.
+}
 \source{
 Vink, C. J., and Duperre, N. (2010). Pisauridae (Arachnida:
 Araneae). _Fauna of New Zealand_ *64* 1-54.

@@ -4,10 +4,20 @@
 \alias{plot.haploAccum}
 \title{Plotting haplotype accumulation curves}
 \usage{
-\method{plot}{haploAccum}(x, add = FALSE, ci = 2, ci.type = c("bar",
-  "line", "polygon"), col = par("fg"), ci.col = col, ci.lty = 1,
-  xlab, ylab = "Haplotypes", ylim, main = paste(x$method,
-  "method of haplotype accumulation", sep = " "), ...)
+\method{plot}{haploAccum}(
+  x,
+  add = FALSE,
+  ci = 2,
+  ci.type = c("bar", "line", "polygon"),
+  col = par("fg"),
+  ci.col = col,
+  ci.lty = 1,
+  xlab,
+  ylab = "Haplotypes",
+  ylim,
+  main = paste(x$method, "method of haplotype accumulation", sep = " "),
+  ...
+)
 }
 \arguments{
 \item{x}{A `haploAccum' object obtained from \code{\link{haploAccum}}.}

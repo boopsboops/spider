@@ -4,8 +4,14 @@
 \alias{read.GB}
 \title{Download sequences from Genbank with metadata.}
 \usage{
-read.GB(access.nb, seq.names = access.nb, species.names = TRUE,
-  gene = TRUE, access = TRUE, as.character = FALSE)
+read.GB(
+  access.nb,
+  seq.names = access.nb,
+  species.names = TRUE,
+  gene = TRUE,
+  access = TRUE,
+  as.character = FALSE
+)
 }
 \arguments{
 \item{access.nb}{A character vector giving the GenBank accession numbers to
@@ -60,7 +66,7 @@ attr(dat, "accession_num")}
 
 }
 \seealso{
-\code{\link{read.GenBank}}.
+\code{\link[ape]{read.GenBank}}.
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>

@@ -7,7 +7,7 @@
 threshID(distobj, sppVector, threshold = 0.01, names = FALSE)
 }
 \arguments{
-\item{distobj}{A distance object (usually from \code{\link{dist.dna}}).}
+\item{distobj}{A distance object (usually from \code{\link[ape]{dist.dna}}).}
 
 \item{sppVector}{Vector of species names. See \code{\link{sppVector}}.}
 
@@ -94,7 +94,7 @@ barcoding and taxonomy in Diptera: a tale of high intraspecific variability
 and low identification success. _Systematic Biology_ *55* (5) 715-728.
 }
 \seealso{
-\code{\link{nearNeighbour}}, \code{\link{threshID}}, \code{\link{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
+\code{\link{nearNeighbour}}, \code{\link{threshID}}, \code{\link[ape]{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
 Also as \code{\link{help}}, ~~~
 }
 \author{

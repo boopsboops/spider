@@ -36,7 +36,7 @@ ti <- subs[lower.tri(subs)]
 #Saturation plot
 doloDist <- ape::dist.dna(dolomedes)
 graphics::plot(doloDist, ti, type="p", pch=19, col="blue", 
-    main="Saturation plot of number of transitions and transversions\\n
+    main="Saturation plot of number of transitions and transversions\n
     against K2P distance. Red: transversions. Blue: transitions")
 graphics::points(doloDist, tv, pch=19, col="red")
 

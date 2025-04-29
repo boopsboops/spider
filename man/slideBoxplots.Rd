@@ -4,8 +4,7 @@
 \alias{slideBoxplots}
 \title{Boxplots across windows}
 \usage{
-slideBoxplots(DNAbin, sppVector, width, interval = 1,
-  method = "nonCon")
+slideBoxplots(DNAbin, sppVector, width, interval = 1, method = "nonCon")
 }
 \arguments{
 \item{DNAbin}{A DNA alignment of class `DNAbin'.}

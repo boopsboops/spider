@@ -4,8 +4,10 @@
 \name{sarkar}
 \alias{sarkar}
 \title{Dummy sequences illustrating the categories of diagnostic nucleotides}
-\format{A DNAbin object containing 8 sequences with a length of 18 base
-pairs stored as a matrix.}
+\format{
+A DNAbin object containing 8 sequences with a length of 18 base
+pairs stored as a matrix.
+}
 \source{
 Sarkar, I., Planet, P., & DeSalle, R. (2008). CAOS software for use
 in character- based DNA barcoding. _Molecular Ecology Resources_ *8*

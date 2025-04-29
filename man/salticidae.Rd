@@ -4,8 +4,10 @@
 \name{salticidae}
 \alias{salticidae}
 \title{Cytochrome oxidase I (COI) sequences of world-wide species of Salticidae}
-\format{A DNAbin object containing 41 sequences with a length of 409 base
-pairs stored as a list.}
+\format{
+A DNAbin object containing 41 sequences with a length of 409 base
+pairs stored as a list.
+}
 \source{
 Maddison, W. P., and Hedin, M. C. (2003). Jumping spider phylogeny
 (Araneae: Salticidae). _Invertebrate Systematics_ *17* 529-549.

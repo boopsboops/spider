@@ -46,7 +46,7 @@ reference to DNA barcoding. _Molecular Ecology Resources_ 12:562-565. doi:
 10.1111/j.1755-0998.2011.03108.x
 }
 \seealso{
-\code{\link{ape-package}}, \code{\link{pegas-package}}.
+\code{\link[ape]{ape-package}}, \code{\link[pegas]{pegas-package}}.
 }
 \author{
 Samuel Brown, Rupert Collins, Stephane Boyer, Marie-Caroline Lefort,

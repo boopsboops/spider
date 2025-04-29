@@ -4,8 +4,16 @@
 \alias{heatmapSpp}
 \title{Visualise a distance matrix using a heatmap}
 \usage{
-heatmapSpp(distObj, sppVector, col = NULL, axisLabels = NULL,
-  triangle = "both", showData = FALSE, dataRound = 3, dataCEX = 1)
+heatmapSpp(
+  distObj,
+  sppVector,
+  col = NULL,
+  axisLabels = NULL,
+  triangle = "both",
+  showData = FALSE,
+  dataRound = 3,
+  dataCEX = 1
+)
 }
 \arguments{
 \item{distObj}{A matrix or object of class \code{dist}.}

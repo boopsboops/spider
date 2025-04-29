@@ -4,8 +4,10 @@
 \name{anoteropsis}
 \alias{anoteropsis}
 \title{Cytochrome oxidase I (COI) sequences of New Zealand _Anoteropsis_ species}
-\format{A DNAbin object containing 33 sequences with a length of 409 base
-pairs stored as a matrix.}
+\format{
+A DNAbin object containing 33 sequences with a length of 409 base
+pairs stored as a matrix.
+}
 \source{
 Vink, C. J., and Paterson, A. M. (2003). Combined molecular and
 morphological phylogenetic analyses of the New Zealand wolf spider genus

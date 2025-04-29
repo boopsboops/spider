@@ -33,7 +33,7 @@ Tajima, F. (1983). Evolutionary relationship of DNA sequences in
 finite populations. _Genetics_ *105*, 437-460.
 }
 \seealso{
-\code{\link{dist.dna}}.
+\code{\link[ape]{dist.dna}}.
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>

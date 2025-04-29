@@ -53,7 +53,7 @@ distinctiveness from observations of monophyly. _Evolution_ *61* (2),
 317-323.
 }
 \seealso{
-\code{\link{nodelabels}}.
+\code{\link[ape]{nodelabels}}.
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>

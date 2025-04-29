@@ -7,7 +7,7 @@
 localMinima(distobj)
 }
 \arguments{
-\item{distobj}{A distance object (usually from \code{\link{dist.dna}}).}
+\item{distobj}{A distance object (usually from \code{\link[ape]{dist.dna}}).}
 }
 \value{
 An object of class `density', which is a list containing the values
@@ -42,7 +42,7 @@ anoThresh$localMinima[1]
 
 }
 \seealso{
-\code{\link{dist.dna}}, \code{\link{density}}. %% ~~objects to See
+\code{\link[ape]{dist.dna}}, \code{\link{density}}. %% ~~objects to See
 Also as \code{\link{help}}, ~~~
 }
 \author{

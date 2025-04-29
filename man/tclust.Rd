@@ -7,7 +7,7 @@
 tclust(distobj, threshold = 0.01)
 }
 \arguments{
-\item{distobj}{A distance object (usually from \code{\link{dist.dna}}).}
+\item{distobj}{A distance object (usually from \code{\link[ape]{dist.dna}}).}
 
 \item{threshold}{Distance cutoff for clustering. Default of 0.01 (1\%).}
 }
@@ -40,7 +40,7 @@ lapply(anoClust, function(x) anoSpp[x])
 
 }
 \seealso{
-\code{\link{dist.dna}}, \code{\link{localMinima}}. %% ~~objects to
+\code{\link[ape]{dist.dna}}, \code{\link{localMinima}}. %% ~~objects to
 See Also as \code{\link{help}}, ~~~
 }
 \author{

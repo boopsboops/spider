@@ -4,8 +4,14 @@
 \alias{slideAnalyses}
 \title{Sliding window analyses}
 \usage{
-slideAnalyses(DNAbin, sppVector, width, interval = 1,
-  distMeasures = TRUE, treeMeasures = FALSE)
+slideAnalyses(
+  DNAbin,
+  sppVector,
+  width,
+  interval = 1,
+  distMeasures = TRUE,
+  treeMeasures = FALSE
+)
 }
 \arguments{
 \item{DNAbin}{A DNA alignment of class `DNAbin'.}
@@ -79,7 +85,7 @@ slideAnalyses(dolomedes, doloSpp, 200, interval=10, treeMeasures=TRUE)
 
 }
 \seealso{
-\code{\link{dist.dna}}, \code{\link{plot.slidWin}},
+\code{\link[ape]{dist.dna}}, \code{\link{plot.slidWin}},
 \code{\link{rankSlidWin}}, \code{\link{slideNucDiag}}.
 }
 \author{

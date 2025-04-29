@@ -30,14 +30,14 @@ depth are taken into account. This will not be useful for small trees, but
 may be helpful with larger datasets.
 
 \code{"PH85"} is the Penny and Hendy (1985) distance. This measure is the
-default of \code{\link{dist.topo}}. In this measure, the smaller the number,
+default of \code{\link[ape]{dist.topo}}. In this measure, the smaller the number,
 the closer the trees are. If the trees are identical, this results in 0.
 }
 \description{
 Compares the clades between two trees.
 }
 \details{
-This function is a modification of the \code{\link{dist.topo}} function in
+This function is a modification of the \code{\link[ape]{dist.topo}} function in
 \code{ape} to give similarity between the two trees as a proportion, and to
 account for the unreliable resolution of deeper nodes that affect some
 methods of tree construction (such as NJ).
@@ -47,7 +47,7 @@ tip labels are different between the two trees, the method will not
 recognise any similarity between them.
 
 This function does not take into account differences in branch length. The
-\code{"score"} method in \code{\link{dist.topo}} does this if desired.
+\code{"score"} method in \code{\link[ape]{dist.topo}} does this if desired.
 }
 \examples{
 
@@ -65,7 +65,7 @@ Penny, D. and Hendy, M. D. (1985) The use of tree comparison
 metrics. _Systematic Zoology_ *34* 75-82.
 }
 \seealso{
-\code{\link{node.depth}}, \code{\link{dist.topo}}.
+\code{\link[ape]{node.depth}}, \code{\link[ape]{dist.topo}}.
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>

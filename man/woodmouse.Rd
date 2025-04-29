@@ -4,8 +4,10 @@
 \name{woodmouse}
 \alias{woodmouse}
 \title{Cytochrome b Gene Sequences of Woodmice}
-\format{A DNAbin object containing 8 sequences with a length of 18 base
-pairs stored as a matrix.}
+\format{
+A DNAbin object containing 8 sequences with a length of 18 base
+pairs stored as a matrix.
+}
 \source{
 Michaux, J. R., Magnanou, E., Paradis, E., Nieberding, C. and Libois,
 R. (2003) Mitochondrial phylogeography of the Woodmouse

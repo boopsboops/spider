@@ -13,7 +13,7 @@ monophyly(phy, sppVector, pp = NA, singletonsMono = TRUE)
 
 \item{pp}{Object of class `prop.part'. Assists in speeding up the function,
 if it has been called already. Default of NA, calling
-\code{\link{prop.part}} internally.}
+\code{\link[ape]{prop.part}} internally.}
 
 \item{singletonsMono}{Logical. Should singletons (i.e. only a single
 specimen representing that species) be treated as monophyletic? Default of
@@ -86,8 +86,8 @@ monophylyBoot(woodTree, woodSpp, woodmouse, thresh = 0.9, reroot = FALSE)
 
 }
 \seealso{
-\code{\link{prop.part}}, \code{\link{root}},
-\code{\link{boot.phylo}}.
+\code{\link[ape]{prop.part}}, \code{\link[ape]{root}},
+\code{\link[ape]{boot.phylo}}.
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>

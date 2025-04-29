@@ -19,9 +19,9 @@ This function computes the numbers of descendants for each dichotomous
 branch of a phylogenetic tree.
 }
 \details{
-The function extends \code{\link{balance}} to allow the balance of a tree
+The function extends \code{\link[ape]{balance}} to allow the balance of a tree
 with polytomies to be calculated. When the tree is fully dichotomous, the
-result is identical to \code{\link{balance}}.
+result is identical to \code{\link[ape]{balance}}.
 }
 \examples{
 
@@ -33,7 +33,7 @@ result is identical to \code{\link{balance}}.
 
 }
 \seealso{
-\code{\link{balance}}.
+\code{\link[ape]{balance}}.
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
