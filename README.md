@@ -1,6 +1,9 @@
-[![Build Status](https://travis-ci.org/boopsboops/spider.svg?branch=master)](https://travis-ci.org/boopsboops/spider)
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/boopsboops/spider/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/boopsboops/spider/actions/workflows/R-CMD-check.yaml)
 [![rstudio mirror](https://cranlogs.r-pkg.org/badges/grand-total/spider)](https://cran.r-project.org/package=spider)
 [![cran version](https://www.r-pkg.org/badges/version/spider)](https://cran.r-project.org/package=spider)
+<!-- badges: end -->
+
 
 # spider
 
