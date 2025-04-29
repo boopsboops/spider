@@ -1,13 +1,23 @@
 Package: spider
 Type: Package
 Title: Species Identity and Evolution in R
-Version: 1.5.0.9000
-Date: 2018-02-15
-Author: Samuel Brown, Rupert Collins, Stephane Boyer, Marie-Caroline Lefort, Jagoba Malumbres-Olarte, Cor Vink, Rob Cruickshank
+Version: 1.5.1
+Date: 2025-04-29
+Authors@R: c(person(given = "Samuel", family = "Brown", role = "aut"),
+            person(given = "Rupert", family = "Collins", role = "aut"),
+            person(given = "Stephane", family = "Boyer", role = "aut"),
+            person(given = "Marie-Caroline", family = "Lefort", role = "aut"),
+            person(given = "Jagoba", family = "Malumbres-Olarte", role = "aut"),
+            person(given = "Cor", family = "Vink", role = "aut"),
+            person(given = "Rob", family = "Cruickshank", role = "aut"),
+            person(given = c("Rupert", "A."), family = "Collins", role = "cre", email = "rupertcollins@gmail.com", comment = c(ORCID = "0000-0002-9135-1169")))
 Maintainer: Rupert A. Collins <rupertcollins@gmail.com>
 Description: Analysis of species limits and DNA barcoding data. Included are functions for generating important summary statistics from DNA barcode data, assessing specimen identification efficacy, testing and optimizing divergence threshold limits, assessment of diagnostic nucleotides, and calculation of the probability of reciprocal monophyly. Additionally, a sliding window function offers opportunities to analyse information across a gene, often used for marker design in degraded DNA studies. Further information on the package has been published in Brown et al (2012) <doi:10.1111/j.1755-0998.2011.03108.x>.
 License: MIT + file LICENSE
 LazyLoad: yes
 Imports: ape, pegas, graphics, stats, utils
-RoxygenNote: 6.1.1
+RoxygenNote: 7.3.2
 Suggests: testthat
+URL: https://github.com/boopsboops/spider
+BugReports: https://github.com/boopsboops/spider/issues
+Encoding: UTF-8
