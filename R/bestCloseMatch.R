@@ -31,7 +31,7 @@
 #' These functions are not recommended as identification tools, though they can
 #' be used as such when \code{names = TRUE}.
 #' 
-#' @param distobj A distance object (usually from \code{\link{dist.dna}}).
+#' @param distobj A distance object (usually from \code{\link[ape]{dist.dna}}).
 #' @param sppVector Vector of species names. See \code{\link{sppVector}}.
 #' @param threshold Distance cutoff for identifications. Default of 0.01 (1\%).
 #' @param names Logical. Should the names of the nearest match be shown?
@@ -47,7 +47,7 @@
 #' \code{nearNeighbour} returns a logical vector or (if \code{names = TRUE})
 #' the name for the nearest individual.
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{nearNeighbour}}, \code{\link{threshID}}, \code{\link{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
+#' @seealso \code{\link{nearNeighbour}}, \code{\link{threshID}}, \code{\link[ape]{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
 #' Also as \code{\link{help}}, ~~~
 #' @references Meier, R., Shiyang, K., Vaidya, G., & Ng, P. (2006). DNA
 #' barcoding and taxonomy in Diptera: a tale of high intraspecific variability

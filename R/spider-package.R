@@ -152,14 +152,11 @@ NULL
 #' Maintainer: Samuel Brown <s_d_j_brown@@hotmail.com>
 #' @seealso
 #' 
-#' \code{\link{ape-package}}, \code{\link{pegas-package}}.
+#' \code{\link[ape]{ape-package}}, \code{\link[pegas]{pegas-package}}.
 #' @references Brown S. D. J., Collins R. A., Boyer S., Lefort M.-C.,
 #' Malumbres-Olarte J., Vink C. J., & Cruickshank R. H. 2012. SPIDER: an R
 #' package for the analysis of species identity and evolution, with particular
 #' reference to DNA barcoding. _Molecular Ecology Resources_ 12:562-565. doi:
 #' 10.1111/j.1755-0998.2011.03108.x
 #' @keywords package
-NULL
-
-
-
+"_PACKAGE"

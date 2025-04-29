@@ -15,7 +15,7 @@
 #' @param sppVector Species vector. See \code{\link{sppVector}}
 #' @param pp Object of class `prop.part'. Assists in speeding up the function,
 #' if it has been called already. Default of NA, calling
-#' \code{\link{prop.part}} internally.
+#' \code{\link[ape]{prop.part}} internally.
 #' @param singletonsMono Logical. Should singletons (i.e. only a single
 #' specimen representing that species) be treated as monophyletic? Default of
 #' TRUE. Possible values of FALSE and NA.
@@ -29,8 +29,8 @@
 #' numeric vector giving the bootstrap proportions for each node of
 #' \code{phy}.}
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{prop.part}}, \code{\link{root}},
-#' \code{\link{boot.phylo}}.
+#' @seealso \code{\link[ape]{prop.part}}, \code{\link[ape]{root}},
+#' \code{\link[ape]{boot.phylo}}.
 #' @examples
 #' 
 #' #Random trees

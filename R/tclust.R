@@ -7,12 +7,12 @@
 #' but both within \code{threshold} of a third, all three are contained in a
 #' single cluster.
 #' 
-#' @param distobj A distance object (usually from \code{\link{dist.dna}}).
+#' @param distobj A distance object (usually from \code{\link[ape]{dist.dna}}).
 #' @param threshold Distance cutoff for clustering. Default of 0.01 (1\%).
 #' @return A list with each element giving the index of the individuals
 #' contained in each cluster.
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{dist.dna}}, \code{\link{localMinima}}. %% ~~objects to
+#' @seealso \code{\link[ape]{dist.dna}}, \code{\link{localMinima}}. %% ~~objects to
 #' See Also as \code{\link{help}}, ~~~
 #' @keywords Barcoding
 #' @examples

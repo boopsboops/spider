@@ -11,7 +11,7 @@
 #' @param phy A tree of class `phylo'.
 #' @return A numeric vector with names giving the node numbers of \code{phy}.
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{nodelabels}}.
+#' @seealso \code{\link[ape]{nodelabels}}.
 #' @references Rosenberg, N. A. (2007). Statistical tests for taxonomic
 #' distinctiveness from observations of monophyly. _Evolution_ *61* (2),
 #' 317-323.

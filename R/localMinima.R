@@ -12,12 +12,12 @@
 #' The value of this function is that it does not require prior knowledge of
 #' species identity to get an indication of potential threshold values.
 #' 
-#' @param distobj A distance object (usually from \code{\link{dist.dna}}).
+#' @param distobj A distance object (usually from \code{\link[ape]{dist.dna}}).
 #' @return An object of class `density', which is a list containing the values
 #' calculated by \code{\link{density}}. The element \code{localMinima} has been
 #' added, which contains the values of the local minima of the density plot.
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{dist.dna}}, \code{\link{density}}. %% ~~objects to See
+#' @seealso \code{\link[ape]{dist.dna}}, \code{\link{density}}. %% ~~objects to See
 #' Also as \code{\link{help}}, ~~~
 #' @keywords Barcoding
 #' @examples

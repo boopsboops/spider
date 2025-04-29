@@ -24,7 +24,7 @@
 #' \code{"gene"}, and \code{"accession_num"}.
 #' @section Warning: 15 Feb 2018: 'read.GB' is deprecated. Please use the rOpenSci packages 'rentrez' and 'traits', or 'ape' for better functionality.
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{read.GenBank}}.
+#' @seealso \code{\link[ape]{read.GenBank}}.
 #' @keywords Datasets
 #' @examples
 #' 

@@ -50,7 +50,7 @@
 #' \item{treeMeasures}{Value of argument. Required for
 #' \code{\link{plot.slidWin}}.}
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{dist.dna}}, \code{\link{plot.slidWin}},
+#' @seealso \code{\link[ape]{dist.dna}}, \code{\link{plot.slidWin}},
 #' \code{\link{rankSlidWin}}, \code{\link{slideNucDiag}}.
 #' @keywords Sliding window
 #' @examples

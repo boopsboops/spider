@@ -11,7 +11,7 @@
 #' (the default), this number is returned as the mean number of substitutions
 #' per nucleotide (i.e. the above divided by the length of the sequences).
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{dist.dna}}.
+#' @seealso \code{\link[ape]{dist.dna}}.
 #' @references Tajima, F. (1983). Evolutionary relationship of DNA sequences in
 #' finite populations. _Genetics_ *105*, 437-460.
 #' @keywords Utilities
