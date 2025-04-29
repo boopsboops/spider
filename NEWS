@@ -3,7 +3,8 @@
 				Released 29 April 2025
 				
 				
--- Fixed CRAN refman links to external packages
+-- Fixed CRAN refman links - package anchors for all Rd \link{} targets added
+-- Improved DESCRIPTION
 
 ############################################
                                 SPIDER VERSION 1.5.0

@@ -1,20 +1,23 @@
-## Resubmission 16.02.18
+## Submission of spider (29-04-2025)
 
-* MIT license changed to CRAN version
-* DESCRIPTION tidied up (superfluous text deleted, doi corrected)
+* Links added to package anchors for all Rd \link{} targets not in the package itself and the base packages
+* Authors list in DESCRIPTION changed to "Authors@R" format, added URL, BugReports, Encoding fields
+* Update NEWS
+* Tidy README
+* Bump version to 1.5.1
 
 ## Notes
 
-* This is a re-release of the 'spider' package. The package was previously on CRAN up until v1.3-0, but was removed. The issues are fixed, and development has moved to https://github.com/boopsboops/spider. 
-
-* Maintainer has changed to Rupert A. Collins (rupertcollins@gmail.com).
+* This is release at request of CRAN to fix errors with missing package anchors in Rd files. 
 
 ## Test environments
 
-* local Ubuntu 16.04 LTS, R 3.4.3
-* Ubuntu 14.04.05 (on travis-ci), R 3.4.2
-* local OS X install, R 3.4.3
-* win-builder (devel and release)
+* local Ubuntu 22.04.5 LTS, R 4.4.1 via devtools::check()
+* windows-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions
+* ubuntu-latest (devel) via GitHub Actions https://github.com/boopsboops/spider/actions
+* ubuntu-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions
+* macos-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions
+* ubuntu-latest (oldrel-1) via GitHub Actions https://github.com/boopsboops/spider/actions
 
 ## R CMD check results
 
@@ -22,4 +25,4 @@
 
 ## Downstream dependencies
 
-* We are not aware of any packages depending on 'spider'.
+* NicheBarcoding
