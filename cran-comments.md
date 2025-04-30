@@ -4,6 +4,7 @@
 * Authors list in DESCRIPTION changed to "Authors@R" format, added URL, BugReports, Encoding fields
 * CITATION changed to bibentry format
 * Update NEWS
+* Update LICENCE
 * Tidy README
 
 ## Notes
@@ -13,6 +14,8 @@
 ## Test environments
 
 * local Ubuntu 22.04.5 LTS, R 4.4.1 via devtools::check(cran = TRUE, remote = TRUE, manual = TRUE)
+* remote Windows via https://win-builder.r-project.org
+* remote Mac via devtools::check_mac_release()
 * windows-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions
 * ubuntu-latest (devel) via GitHub Actions https://github.com/boopsboops/spider/actions
 * ubuntu-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions
