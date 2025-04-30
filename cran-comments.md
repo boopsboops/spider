@@ -2,9 +2,9 @@
 
 * Links added to package anchors for all Rd \link{} targets not in the package itself and the base packages
 * Authors list in DESCRIPTION changed to "Authors@R" format, added URL, BugReports, Encoding fields
+* CITATION changed to bibentry format
 * Update NEWS
 * Tidy README
-* Bump version to 1.5.1
 
 ## Notes
 
@@ -12,7 +12,7 @@
 
 ## Test environments
 
-* local Ubuntu 22.04.5 LTS, R 4.4.1 via devtools::check()
+* local Ubuntu 22.04.5 LTS, R 4.4.1 via devtools::check(cran = TRUE, remote = TRUE, manual = TRUE)
 * windows-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions
 * ubuntu-latest (devel) via GitHub Actions https://github.com/boopsboops/spider/actions
 * ubuntu-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions

@@ -4,7 +4,7 @@
 				
 				
 -- Fixed CRAN refman links - package anchors for all Rd \link{} targets added
--- Improved DESCRIPTION
+-- Improved DESCRIPTION and CITATION
 
 ############################################
                                 SPIDER VERSION 1.5.0
