@@ -22,7 +22,7 @@
 #' @return Plots a haplotype accumulation curve and confidence intervals
 #' depending on the options given to \code{\link{haploAccum}}.
 #' @author Jagoba Malumbres-Olarte <j.malumbres.olarte@@gmail.com>.
-#' @references Gotellli, N.J. & Colwell, R.K. (2001). Quantifying biodiversity:
+#' @references Gotelli, N.J. & Colwell, R.K. (2001). Quantifying biodiversity:
 #' procedures and pitfalls in measurement and comparison of species richness.
 #' _Ecology Letters_ *4* 379--391.
 #' @keywords Sampling

@@ -20,7 +20,7 @@
 #' M.), pp. 125-134. New Zealand Plant Protection Society, Lincoln.
 #' 
 #' Chao, A. (1989). Estimating population size for sparse data in
-#' capture-recapture experimnets. _Biometrics_ *45* 427-438.
+#' capture-recapture experiments. _Biometrics_ *45* 427-438.
 #' @keywords Barcoding
 #' @examples
 #' 

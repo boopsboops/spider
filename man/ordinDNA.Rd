@@ -25,7 +25,7 @@ elements: \item{pco}{Output of the Principal Coordinates Analysis.}
 \item{sppVector}{Character vector giving the species vector.}
 }
 \description{
-Calculates Principical Coonrdinates Analysis on a matrix of genetic
+Calculates Principal Coordinates Analysis on a matrix of genetic
 distances and plots an ordination of the first two major axes.
 }
 \details{
@@ -36,7 +36,7 @@ relative distance between each of the species in the dataset. It is
 presented as an alternative to the neighbour-joining trees which are
 frequently used for the visualisation of DNA barcoding data. NJ trees show
 hypotheses of relationships, which are inappropriate for the questions
-usally asked in DNA barcoding studies.
+usually asked in DNA barcoding studies.
 
 The distance between the centroids of the clusters are roughly proportional
 to the genetic distances between the species. NOTE: it is important to

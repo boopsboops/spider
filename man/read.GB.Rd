@@ -2,7 +2,7 @@
 % Please edit documentation in R/read.GB.R
 \name{read.GB}
 \alias{read.GB}
-\title{Download sequences from Genbank with metadata.}
+\title{Download sequences from GenBank with metadata.}
 \usage{
 read.GB(
   access.nb,
@@ -55,7 +55,7 @@ the gene region from which sequences were derived.
 \dontrun{
 read.GB("AY059961")
 
-#Download the sequences making data(anoteropsis) from Genbank
+#Download the sequences making data(anoteropsis) from GenBank
 nums <- 59961:59993
 seqs <- paste("AY0", nums, sep="")
 dat <- read.GB(seqs)

@@ -56,7 +56,7 @@ graphics::plot(dolocurv)
 
 }
 \references{
-Gotellli, N.J. & Colwell, R.K. (2001). Quantifying biodiversity:
+Gotelli, N.J. & Colwell, R.K. (2001). Quantifying biodiversity:
 procedures and pitfalls in measurement and comparison of species richness.
 _Ecology Letters_ *4*, 379--391.
 }

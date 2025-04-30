@@ -18,7 +18,7 @@ interval of 3.}
 \value{
 A list of `DNAbin' objects, with each alignment being \code{width}
 bases in length. The list has length of the DNA alignment minus the width.
-The positions covered by each window can be retreived with \code{attr(x,
+The positions covered by each window can be retrieved with \code{attr(x,
 "window")}.
 }
 \description{

@@ -3,7 +3,7 @@
 #' Conducts population aggregate analysis over a matrix of characters of
 #' interest.
 #' 
-#' When used on DNA sequences, the function treats gaps as seperate characters.
+#' When used on DNA sequences, the function treats gaps as separate characters.
 #' 
 #' @param data A data matrix with columns as characters and rows as
 #' individuals.

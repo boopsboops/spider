@@ -13,7 +13,7 @@
 #' 
 #' \code{sppBounds} has the following options: \code{"net"} (the default)
 #' creates a complete graph between all individuals within a species.  If
-#' \code{"circles"} is specified, a circle is drawn with a center fixed on the
+#' \code{"circles"} is specified, a circle is drawn with a centre fixed on the
 #' centroid, and a radius of the length to the maximally distant individual.
 #' Selecting the option of \code{"none"} means the individuals are not
 #' connected in any way.
@@ -43,7 +43,7 @@
 #' \code{\link{points}}. Default of 21.
 #' @param ptCex Numeric. Number governing the size of the points. Default of
 #' 0.5.
-#' @param netWd Numeric. Number governing the width of the lines in the netowk.
+#' @param netWd Numeric. Number governing the width of the lines in the network.
 #' Default of 1.
 #' @param ... Other arguments to be passed to \code{plot}.
 #' @return Plots an ordination of the first two major axes showing the

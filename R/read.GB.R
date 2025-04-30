@@ -1,4 +1,4 @@
-#' Download sequences from Genbank with metadata.
+#' Download sequences from GenBank with metadata.
 #' 
 #' Downloads sequences associated with the given accession numbers into a
 #' `DNAbin' class.
@@ -31,7 +31,7 @@
 #' \dontrun{
 #' read.GB("AY059961")
 #' 
-#' #Download the sequences making data(anoteropsis) from Genbank
+#' #Download the sequences making data(anoteropsis) from GenBank
 #' nums <- 59961:59993
 #' seqs <- paste("AY0", nums, sep="")
 #' dat <- read.GB(seqs)

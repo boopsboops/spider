@@ -1,6 +1,6 @@
 #' Calculates a Principal Components Ordination of genetic distances
 #' 
-#' Calculates Principical Coonrdinates Analysis on a matrix of genetic
+#' Calculates Principal Coordinates Analysis on a matrix of genetic
 #' distances and plots an ordination of the first two major axes.
 #' 
 #' This function is a wrapper for \code{\link{cmdscale}}, which performs a
@@ -10,7 +10,7 @@
 #' presented as an alternative to the neighbour-joining trees which are
 #' frequently used for the visualisation of DNA barcoding data. NJ trees show
 #' hypotheses of relationships, which are inappropriate for the questions
-#' usally asked in DNA barcoding studies.
+#' usually asked in DNA barcoding studies.
 #' 
 #' The distance between the centroids of the clusters are roughly proportional
 #' to the genetic distances between the species. NOTE: it is important to

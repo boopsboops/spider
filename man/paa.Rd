@@ -22,7 +22,7 @@ Conducts population aggregate analysis over a matrix of characters of
 interest.
 }
 \details{
-When used on DNA sequences, the function treats gaps as seperate characters.
+When used on DNA sequences, the function treats gaps as separate characters.
 }
 \examples{
 

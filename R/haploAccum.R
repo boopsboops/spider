@@ -29,7 +29,7 @@
 #' package'vegan'. Missing or ambiguous data will be detected and indicated by
 #' a warning, as they may cause an overestimation of the number of haplotypes.
 #' @author Jagoba Malumbres-Olarte <j.malumbres.olarte@@gmail.com>.
-#' @references Gotellli, N.J. & Colwell, R.K. (2001). Quantifying biodiversity:
+#' @references Gotelli, N.J. & Colwell, R.K. (2001). Quantifying biodiversity:
 #' procedures and pitfalls in measurement and comparison of species richness.
 #' _Ecology Letters_ *4*, 379--391.
 #' @keywords Sampling
