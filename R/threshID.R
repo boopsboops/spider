@@ -22,7 +22,7 @@
 #' 
 #' \code{threshID} conducts a threshold-based analysis, similar to that
 #' conducted by the "Identify Specimen" tool provided by the Barcode of Life
-#' Database (\url{http://www.boldsystems.org/index.php/IDS_OpenIdEngine}). It
+#' Database (\url{https://boldsystems.org/}). It
 #' is more inclusive than \code{bestCloseMatch}, considering ALL sequences
 #' within the given threshold. If \code{names = TRUE}, a list is returned
 #' containing the names of all species represented by specimens within the
