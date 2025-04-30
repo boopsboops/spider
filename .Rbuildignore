@@ -4,3 +4,4 @@ temp
 cran-comments.md
 ^\.github$
 revdep
+^CRAN-SUBMISSION$
