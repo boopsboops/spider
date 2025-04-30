@@ -1,13 +1,11 @@
-citHeader("To cite spider in a publication, please use:")
-
-citEntry(entry="Article",
-	title = "{SPIDER}: an {R} package for the analysis of species identity and evolution, with particular reference to {DNA} barcoding",
-        author = personList(as.person("Samuel D. J. Brown"),as.person("Rupert A. Collins"), as.person("Stephane Boyer"), as.person("Marie-Caroline Lefort"), as.person("Jagoba Malumbres-Olarte"), as.person("Cor J. Vink"), as.person("Robert H. Cruickshank")),
-	journal = "Molecular Ecology Resources",
-  	year = 2012,
-	volume = 12,
-	pages = "562--565",
-	
-        textVersion = "Brown S. D. J., Collins R. A., Boyer S., Lefort M.-C., Malumbres-Olarte J., Vink C. J., & Cruickshank R. H. 2012. SPIDER: an R package for the analysis of species identity and evolution, with particular reference to DNA barcoding. Molecular Ecology Resources 12:562-565")
-
-citFooter("As spider is developing rapidly, you may want to cite also its version number (found with 'library(help = spider)').")
+bibentry(bibtype = "Article",
+  title = "{SPIDER}: an {R} package for the analysis of species identity and evolution, with particular reference to {DNA} barcoding",
+  author = c(person("Samuel D. J.", "Brown"), person("Rupert A.", "Collins"), person("Stephane", "Boyer"), person("Marie-Caroline", "Lefort"), person("Jagoba", "Malumbres-Olarte"), person("Cor J.", "Vink"), person("Robert H.", "Cruickshank")),
+  journal = "Molecular Ecology Resources",
+  year = "2012",
+  volume = "12",
+  pages = "562-565",
+  doi = "10.1111/j.1755-0998.2011.03108.x",
+  header = "To cite spider in a publication please use:",
+  footer = "spider is evolving quickly, so you may want to cite its version number (found with 'library(help = spider)' or 'packageVersion(\"spider\")')."
+)
