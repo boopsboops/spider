@@ -20,4 +20,5 @@ RoxygenNote: 7.3.2
 Suggests: testthat
 URL: https://github.com/boopsboops/spider
 BugReports: https://github.com/boopsboops/spider/issues
+Language: en-GB
 Encoding: UTF-8
