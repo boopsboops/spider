@@ -1,31 +1,30 @@
-## Submission of spider (29-04-2025)
+## Submission of spider (07-05-2025)
 
-* Links added to package anchors for all Rd \link{} targets not in the package itself and the base packages
-* Authors list in DESCRIPTION changed to "Authors@R" format, added URL, BugReports, Encoding fields
-* CITATION changed to bibentry format
-* Update NEWS
-* Update LICENCE
-* Tidy README
+This release addresses issues requested by CRAN related to missing package anchors in Rd files.
 
-## Notes
+### Changes
 
-* This is release at request of CRAN to fix errors with missing package anchors in Rd files. 
+* Added links to package anchors for all Rd `\link{}` targets referencing external or base packages.
+* Converted `Author` field to `Authors@R`; added `URL`, `BugReports`, and `Encoding` fields to DESCRIPTION.
+* Updated `CITATION` to use `bibentry()` format.
+* Updated `NEWS`, `LICENSE`, and tidied `README`.
 
-## Test environments
+### Test environments
 
-* local Ubuntu 22.04.5 LTS, R 4.4.1 via devtools::check(cran = TRUE, remote = TRUE, manual = TRUE)
-* remote Windows via https://win-builder.r-project.org
-* remote Mac via devtools::check_mac_release()
-* windows-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions
-* ubuntu-latest (devel) via GitHub Actions https://github.com/boopsboops/spider/actions
-* ubuntu-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions
-* macos-latest (release) via GitHub Actions https://github.com/boopsboops/spider/actions
-* ubuntu-latest (oldrel-1) via GitHub Actions https://github.com/boopsboops/spider/actions
+* Local: Ubuntu 22.04.5 LTS, R 4.4.1 via `R CMD check --as-cran` and `devtools::check(cran = TRUE, remote = TRUE, manual = TRUE)`
+* Win-builder (R-release)
+* macOS (release) via `devtools::check_mac_release()`
+* GitHub Actions:
+  * windows-latest (release)
+  * ubuntu-latest (devel, release, oldrel-1)
+  * macos-latest (release)
 
-## R CMD check results
+### R CMD check results
 
-0 ERRORs | 0 WARNINGs | 0 NOTES.
+0 ERRORs | 0 WARNINGs | 1 NOTE
 
-## Downstream dependencies
+* NOTE: A non-standard file `cran-comments.md` was found at the top level. This file is included intentionally to provide CRAN with submission context, as per CRAN submission best practices.
+
+### Downstream dependencies
 
 * NicheBarcoding
