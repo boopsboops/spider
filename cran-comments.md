@@ -11,7 +11,7 @@ This release addresses issues requested by CRAN related to missing package ancho
 
 ### Test environments
 
-* Local: Ubuntu 22.04.5 LTS, R 4.4.1 via `R CMD check --as-cran` and `devtools::check(cran = TRUE, remote = TRUE, manual = TRUE)`
+* Local: Ubuntu 22.04.5 LTS, R 4.4.1 and R 4.5.0 via `R CMD check --as-cran` and `devtools::check(cran = TRUE, remote = TRUE, manual = TRUE)`
 * Win-builder (R-release)
 * macOS (release) via `devtools::check_mac_release()`
 * GitHub Actions:
