@@ -2,3 +2,5 @@ temp
 LICENCE
 revdep
 CRAN-SUBMISSION
+spider.Rcheck
+*.tar.gz

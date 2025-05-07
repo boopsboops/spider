@@ -1,7 +1,11 @@
-temp
-.travis.yml
-.gitignore
-cran-comments.md
-^\.github$
-revdep
+^temp
+^\\.travis.yml$
+^\\.git$
+^\\.gitignore$
+^\\.Rproj\\.user$
+^\\.DS_Store$
+^spider\\.Rproj$
+^README\\.md$
+^\\.github$
+^revdep$
 ^CRAN-SUBMISSION$
