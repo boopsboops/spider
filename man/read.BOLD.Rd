@@ -74,7 +74,7 @@ ape::write.dna(pisaurid, "filename.fas", format="fasta")}
 \references{
 BOLD web services: \url{https://boldsystems.org/data/api/?type=webservices}.
 
-BOLD version 3.0 \url{http://v3.boldsystems.org/}.
+BOLD version 3.0 \url{https://v3.boldsystems.org/}.
 }
 \seealso{
 \code{\link{stats.BOLD}}, \code{\link{search.BOLD}}, \code{\link{read.GB}}. %% ~~objects to See Also as
