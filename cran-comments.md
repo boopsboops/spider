@@ -1,10 +1,11 @@
-## Submission of spider (04-04-2026)
+## Submission of spider v1.5.2 (04-04-2026)
 
 This release fixes a bug in `tclust()`.
 
 ### Changes
 
-* Bug in `tclust()` reported by killidude (https://github.com/boopsboops/spider/issues/7) fixed via pull request (https://github.com/boopsboops/spider/pull/8).
+* Bug in `tclust` reported by killidude (https://github.com/boopsboops/spider/issues/7) fixed via pull request (https://github.com/boopsboops/spider/pull/8).
+* Fixed URLs in `stats.BOLD.R`, `search.BOLD.R`, `read.BOLD.R` to use https.
 * Updated `NEWS` and `DESCRIPTION`.
 
 ### Test environments
