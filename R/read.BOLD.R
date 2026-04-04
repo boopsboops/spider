@@ -48,7 +48,7 @@
 #' \code{\link{help}}, ~~~
 #' @references BOLD web services: \url{https://boldsystems.org/data/api/?type=webservices}.
 #' 
-#' BOLD version 3.0 \url{http://v3.boldsystems.org/}.
+#' BOLD version 3.0 \url{https://v3.boldsystems.org/}.
 #' @keywords Barcoding Datasets
 #' @examples
 #' 
