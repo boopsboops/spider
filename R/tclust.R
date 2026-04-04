@@ -30,13 +30,38 @@
 #' lapply(anoClust, function(x) anoSpp[x])
 #' 
 #' @export tclust
-tclust <- function(distobj, threshold = 0.01){
-	distobj <- as.matrix(distobj)
-	out <- unique(apply(distobj, 2, function(x) which(x < threshold)))
-	for(i in 1:length(out)){
-	for(j in 1:length(out)){
-		if(length(intersect(out[[i]], out[[j]])) > 0) out[[i]] <- union(out[[i]], out[[j]]) else out[[i]] <- out[[i]]
-		}
-	}
-	unique(lapply(out, sort))
+tclust <- function(distobj, threshold = 0.01) {
+  dmat <- as.matrix(distobj)
+  n <- nrow(dmat)
+  
+  # adjacency list: neighbors within threshold (excluding self)
+  adj <- lapply(seq_len(n), function(i) {
+    which(dmat[i, ] < threshold & seq_len(n) != i)
+  })
+  
+  visited <- rep(FALSE, n)
+  clusters <- list()
+  
+  for (i in seq_len(n)) {
+    if (!visited[i]) {
+      # BFS/DFS to get connected component
+      stack <- c(i)
+      comp <- c()
+      
+      while (length(stack) > 0) {
+        node <- stack[1]
+        stack <- stack[-1]
+        
+        if (!visited[node]) {
+          visited[node] <- TRUE
+          comp <- c(comp, node)
+          stack <- c(stack, adj[[node]])
+        }
+      }
+      
+      clusters[[length(clusters) + 1]] <- sort(unique(comp))
+    }
+  }
+  
+  return(clusters)
 }
