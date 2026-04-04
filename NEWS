@@ -4,6 +4,7 @@
 				
 				
 -- Fixed bug in `tclust` that duplicates some sequence pair distances when clustering threshold is small.
+-- Fixed URLs in `stats.BOLD.R`, `search.BOLD.R`, `read.BOLD.R` to use https.
 
 ############################################
                                 SPIDER VERSION 1.5.1
