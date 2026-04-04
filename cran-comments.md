@@ -1,19 +1,15 @@
-## Submission of spider (07-05-2025)
+## Submission of spider (04-04-2026)
 
-This release addresses issues requested by CRAN related to missing package anchors in Rd files.
+This release fixes a bug in `tclust()`.
 
 ### Changes
 
-* Added links to package anchors for all Rd `\link{}` targets referencing external or base packages.
-* Converted `Author` field to `Authors@R`; added `URL`, `BugReports`, and `Encoding` fields to DESCRIPTION.
-* Updated `CITATION` to use `bibentry()` format.
-* Updated `NEWS`, `LICENSE`, and tidied `README`.
+* Bug in `tclust()` reported by killidude (https://github.com/boopsboops/spider/issues/7) fixed via pull request (https://github.com/boopsboops/spider/pull/8).
+* Updated `NEWS` and `DESCRIPTION`.
 
 ### Test environments
 
-* Local: Ubuntu 22.04.5 LTS, R 4.4.1 and R 4.5.0 via `R CMD check --as-cran` and `devtools::check(cran = TRUE, remote = TRUE, manual = TRUE)`
-* Win-builder (R-release)
-* macOS (release) via `devtools::check_mac_release()`
+* Local: Ubuntu 22.04.5 LTS, R 4.5.3 via `R CMD check --as-cran` and `devtools::check(cran=TRUE)`
 * GitHub Actions:
   * windows-latest (release)
   * ubuntu-latest (devel, release, oldrel-1)
@@ -21,9 +17,7 @@ This release addresses issues requested by CRAN related to missing package ancho
 
 ### R CMD check results
 
-0 ERRORs | 0 WARNINGs | 1 NOTE
-
-* NOTE: A non-standard file `cran-comments.md` was found at the top level. This file is included intentionally to provide CRAN with submission context, as per CRAN submission best practices.
+0 ERRORs | 0 WARNINGs | 0 NOTES
 
 ### Downstream dependencies
 

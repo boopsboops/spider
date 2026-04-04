@@ -1,4 +1,11 @@
 ############################################
+                                SPIDER VERSION 1.5.2
+				Released 4 April 2026
+				
+				
+-- Fixed bug in `tclust` that duplicates some sequence pair distances when clustering threshold is small.
+
+############################################
                                 SPIDER VERSION 1.5.1
 				Released 29 April 2025
 				
