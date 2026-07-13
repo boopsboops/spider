@@ -32,7 +32,7 @@ data(woodmouse)
 seeBarcode(woodmouse[1,])
 seeBarcode(woodmouse[1,], col=c("pink", "orange", "steelblue", "yellow"))
 seeBarcode(woodmouse[1,], col=c("black", "white", "white", "black"))
-apply(woodmouse[1:3,], MARGIN=1, FUN=seeBarcode)
+for(i in 1:3) seeBarcode(woodmouse[i, ])
 
 }
 \author{

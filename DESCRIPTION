@@ -1,16 +1,16 @@
 Package: spider
 Type: Package
 Title: Species Identity and Evolution in R
-Version: 1.5.2
-Date: 2026-04-04
+Version: 1.5.3
+Date: 2026-07-13
 Authors@R: c(person(given="Samuel",family="Brown",role="aut"),person(given="Stephane",family="Boyer",role="aut"),person(given="Marie-Caroline",family="Lefort",role="aut"),person(given="Jagoba",family="Malumbres-Olarte",role="aut"),person(given="Cor",family="Vink",role="aut"),person(given="Rob",family="Cruickshank",role="aut"),person(given=c("Rupert","A."),family="Collins",role=c("aut","cre","cph"),email="rupertcollins@gmail.com",comment=c(ORCID="0000-0002-9135-1169")))
 Description: Analysis of species limits and DNA barcoding data. Included are functions for generating important summary statistics from DNA barcode data, assessing specimen identification efficacy, testing and optimizing divergence threshold limits, assessment of diagnostic nucleotides, and calculation of the probability of reciprocal monophyly. Additionally, a sliding window function offers opportunities to analyse information across a gene, often used for marker design in degraded DNA studies. Further information on the package has been published in Brown et al (2012) <doi:10.1111/j.1755-0998.2011.03108.x>.
 License: MIT + file LICENSE
 LazyLoad: yes
 Imports: ape, pegas, graphics, stats, utils
-RoxygenNote: 7.3.3
 Suggests: testthat
 URL: https://github.com/boopsboops/spider
 BugReports: https://github.com/boopsboops/spider/issues
 Language: en-GB
 Encoding: UTF-8
+Config/roxygen2/version: 8.0.0

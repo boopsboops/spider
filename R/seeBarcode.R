@@ -21,7 +21,7 @@
 #' seeBarcode(woodmouse[1,])
 #' seeBarcode(woodmouse[1,], col=c("pink", "orange", "steelblue", "yellow"))
 #' seeBarcode(woodmouse[1,], col=c("black", "white", "white", "black"))
-#' apply(woodmouse[1:3,], MARGIN=1, FUN=seeBarcode)
+#' for(i in 1:3) seeBarcode(woodmouse[i, ])
 #' 
 #' @importFrom graphics plot
 #' @importFrom graphics abline
@@ -30,7 +30,8 @@
 #' @export seeBarcode
 seeBarcode <- 
 function(seq, col=c("green", "blue", "black", "red")){
-                if(!is.null(dim(seq))) if(dim(seq)[1] > 1) stop("Single sequences only please!")
+                if(!inherits(seq, "DNAbin")) stop("'seq' must be a DNAbin sequence")
+                seq <- as.vector(seq)
                 bases <- c(136, 40, 72, 24)
                 pos <- 1:length(seq)
                 ind <- match(as.numeric(seq), bases)

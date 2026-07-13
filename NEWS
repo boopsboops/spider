@@ -1,4 +1,11 @@
 ############################################
+                                SPIDER VERSION 1.5.3
+				Released 13 July 2026
+				
+				
+-- Fixed compatibility with R-devel changes to `aperm()` affecting `apply()` on DNAbin objects in `seeBarcode()`.
+
+############################################
                                 SPIDER VERSION 1.5.2
 				Released 4 April 2026
 				
